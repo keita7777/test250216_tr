@@ -1,14 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-.RinjiAllBnr {
-  display: none;
-}
+.RinjiAllBnr{display: none;}
 
-:root {
-  --fontfamily-english: "Poppins", sans-serif;
+:root{
+  --fontfamily-english: 'Poppins', sans-serif;
   --fontfamily-japanese-sans-serif: "Noto Sans JP", sans-serif;
-  --fontfamily-japanese-serif: "Noto Serif JP", serif;
+  --fontfamily-japanese-serif: 'Noto Serif JP', serif;
   --color-base-main-bg: #f7ecea;
   --color-base-red-dark: #b2171d;
   --color-base-red-light: #e7290f;
@@ -87,26 +85,27 @@
   padding-top: 50px;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width:1500px) {
   .pc #contents.goldenweek #contents-main.all::before {
     background-size: 140% auto;
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width:1400px) {
   .pc #contents.goldenweek #contents-main.all::before {
     background-size: 150% auto;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width:1300px) {
   .pc #contents.goldenweek #contents-main.all::before {
     background-size: 160% auto;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width:1200px) {
   .pc #contents.goldenweek #contents-main.all::before {
     background-image: none;
   }
 }
+
 
 /* メインタイトル
 ============================================ */
@@ -162,12 +161,14 @@
   align-items: center;
 }
 
+
 /* 備考 */
 #contents.goldenweek #contents-main .campaign .campaign_remark {
   font-size: 14px;
   line-height: normal;
   text-align: justify;
 }
+
 
 /* MUSIC THEATER デジタル抽選会
 ============================*/
@@ -197,24 +198,14 @@
 #contents.goldenweek #contents-main .campaign.digital-lottery h3 .subtext {
   font-size: 32px;
   position: relative;
-  background-image: url(./icon_digitalLotteryApply_title1.png),
-    url(./icon_digitalLotteryApply_title2.png);
+  background-image: url(./icon_digitalLotteryApply_title1.png), url(./icon_digitalLotteryApply_title2.png);
   background-repeat: no-repeat;
   background-position: left, right;
   background-size: 60px;
   padding: 10px 90px 10px 93px;
   margin-bottom: 15px;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  h3
-  .subtext::before,
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  h3
-  .subtext::after {
+#contents.goldenweek #contents-main .campaign.digital-lottery h3 .subtext::before, #contents.goldenweek #contents-main .campaign.digital-lottery h3 .subtext::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -222,52 +213,36 @@
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  h3
-  .subtext::before {
+#contents.goldenweek #contents-main .campaign.digital-lottery h3 .subtext::before {
   border: 1px solid var(--color-base-red-dark);
   width: 67%;
   bottom: 5px;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  h3
-  .subtext::after {
+#contents.goldenweek #contents-main .campaign.digital-lottery h3 .subtext::after {
   /* 後回し */
 }
 #contents.goldenweek #contents-main .campaign.digital-lottery h3 .maintext {
   font-size: 56px;
 }
 
+
 /* キャンペーン期間、開催場所 */
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_term
-  dl {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_term dl {
   border: 1px solid var(--color-base-red-dark);
   color: var(--color-base-red-dark);
 }
 
 /* 参加人数 */
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_participate {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_participate {
   background-color: var(--color-base-red-dark);
   color: var(--color-base-white);
   padding: 3px 10px;
   font-size: 20px;
+  letter-spacing: 0.1em;
 }
 
 /* キャンペーン概要テキスト */
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_text {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_text {
   color: var(--color-base-blue-dark);
   font-weight: bold;
   font-size: 20px;
@@ -275,10 +250,7 @@
 }
 
 /* 参加方法 */
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply {
   position: relative;
   border: 1px solid var(--color-base-blue-dark);
   border-radius: 10px;
@@ -290,10 +262,7 @@
   box-sizing: border-box;
   width: 100%;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply::before {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply::before {
   content: "";
   position: absolute;
   background-image: url(./bg_digital-lottery3.png);
@@ -305,10 +274,7 @@
   left: -76px;
   bottom: -60px;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply::after {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply::after {
   content: "";
   position: absolute;
   background-image: url(./bg_digital-lottery2.png);
@@ -321,11 +287,8 @@
   top: -50px;
 }
 
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  h4 {
+
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply h4 {
   position: absolute;
   top: -1em;
   left: 50%;
@@ -339,22 +302,13 @@
   padding: 5px 40px;
 }
 
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 100px;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -364,23 +318,11 @@
   padding-top: 20px;
 }
 
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li
-  .image {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li .image {
   position: relative;
   /* z-index: -1; */
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li
-  .image::before {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li .image::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -396,24 +338,11 @@
   width: 18px;
   height: 31px;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li:last-of-type
-  .image::before {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li:last-of-type .image::before {
   display: none;
 }
 
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li
-  .image
-  .num {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li .image .num {
   position: absolute;
   top: -15px;
   left: 50%;
@@ -429,16 +358,13 @@
   justify-content: center;
   align-items: center;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li
-  .text {
+#contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li .text {
   color: var(--color-base-blue-dark);
   font-weight: bold;
 }
+
+
+
 
 /* LINE公式アカウントキャンペーン
 ============================*/
@@ -503,10 +429,7 @@
 }
 
 /* テキスト */
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_text {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_text {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -516,14 +439,7 @@
   padding: 0 190px;
   box-sizing: border-box;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_text::before,
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_text::after {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_text::before, #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_text::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -536,55 +452,33 @@
   width: 190px;
   height: 230px;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_text::before {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_text::before {
   left: 0;
   background-image: url(./fig_linecampaign_left.png);
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_text::after {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_text::after {
   right: 0;
   background-image: url(./fig_linecampaign_right.png);
 }
 
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_text
-  .red {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_text .red {
   color: var(--color-base-red-light);
   font-size: 24px;
 }
 
 /* キャンペーン期間 */
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_term
-  dl {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_term dl {
   border: 1px solid var(--color-base-green-light);
   color: var(--color-base-green-light);
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_term
-  dl
-  .detabox {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_term dl .detabox {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* クーポン利用期限 */
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_expire {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_expire {
   background-color: var(--color-base-red-light);
   color: var(--color-base-white);
   font-weight: bold;
@@ -595,18 +489,10 @@
   /* max-width: 600px; */
   box-sizing: border-box;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_expire
-  dl {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_expire dl {
   font-size: 24px;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_expire
-  .text {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_expire .text {
   font-size: 18px;
 }
 
@@ -621,11 +507,7 @@
   width: 75%;
   /* max-width: 600px; */
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_btn
-  a {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_btn a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -636,11 +518,7 @@
   line-height: 1.6;
   position: relative;
 }
-#contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_btn
-  a::after {
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_btn a::after {
   font-family: "font Awesome 5 Free";
   font-weight: bold;
   content: "\f105";
@@ -654,6 +532,7 @@
   color: var(--color-base-white);
   font-size: 32px;
 }
+
 
 /* 音楽と映画を楽しむ11日間
 ============================================ */
@@ -674,38 +553,21 @@
   position: relative;
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-title
-  h3::before,
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-title
-  h3::after {
+#contents.goldenweek #contents-main .musictheater .musictheater-title h3::before, #contents.goldenweek #contents-main .musictheater .musictheater-title h3::after {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-title
-  h3::before {
+#contents.goldenweek #contents-main .musictheater .musictheater-title h3::before {
   background-image: url(./icon_musictheater-title1.png);
   width: 88px;
   height: 137px;
   left: -90px;
   top: -10px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-title
-  h3::after {
+#contents.goldenweek #contents-main .musictheater .musictheater-title h3::after {
   background-image: url(./icon_musictheater-title2.png);
   width: 48px;
   height: 79px;
@@ -713,21 +575,14 @@
   bottom: -70px;
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-title
-  h3
-  .musictheater-title_big {
+
+
+#contents.goldenweek #contents-main .musictheater .musictheater-title h3 .musictheater-title_big {
   font-size: 42px;
   letter-spacing: 0.1em;
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-title
-  .musictheater-title_text {
+#contents.goldenweek #contents-main .musictheater .musictheater-title .musictheater-title_text {
   color: var(--color-base-blue-dark);
   text-align: center;
   font-weight: bold;
@@ -742,6 +597,7 @@
   margin-top: 80px;
 }
 
+
 /* 音楽と映画を楽しむ11日間　各タイトル（特別プログラム、ニュークラシックステージ、ラ・フォル・ジュルネ）
 ============================================ */
 #contents.goldenweek #contents-main .musictheater .musictheater-section-title {
@@ -752,18 +608,12 @@
   font-weight: bold;
   /* margin-left: 80px; */
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-title_inner {
+#contents.goldenweek #contents-main .musictheater .musictheater-section-title_inner  {
   padding-left: 90px;
   position: relative;
   letter-spacing: 0.15em;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-title_inner::before {
+#contents.goldenweek #contents-main .musictheater .musictheater-section-title_inner::before {
   content: "";
   position: absolute;
   top: 40%;
@@ -778,74 +628,41 @@
   height: 75px;
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-title
-  h4 {
+#contents.goldenweek #contents-main .musictheater .musictheater-section-title h4 {
   font-size: 32px;
   margin-bottom: 15px;
   font-weight: bold;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-title
-  h4
-  .red {
+#contents.goldenweek #contents-main .musictheater .musictheater-section-title h4 .red {
   color: var(--color-base-red-dark);
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-title
-  h4
-  .blue {
+#contents.goldenweek #contents-main .musictheater .musictheater-section-title h4 .blue {
   color: var(--color-base-blue-dark);
 }
 
 /* 音楽と映画を楽しむKITTEのGW特別プログラム */
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .special-program
-  .musictheater-section {
+#contents.goldenweek #contents-main .musictheater .special-program .musictheater-section {
   margin-top: 50px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .special-program
-  .musictheater-section-title {
+#contents.goldenweek #contents-main .musictheater .special-program .musictheater-section-title {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .special-program
-  .musictheater-section-title_inner::before {
+#contents.goldenweek #contents-main .musictheater .special-program .musictheater-section-title_inner::before {
   background-image: url(./icon_musictheater-section-title1.png);
 }
 
 /* ニュークラシックステージ */
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .newclassic-stage
-  .musictheater-section-title_inner::before {
+#contents.goldenweek #contents-main .musictheater .newclassic-stage .musictheater-section-title_inner::before {
   background-image: url(./icon_musictheater-section-title2.png);
 }
 
 /* ラ・フォル・ジュルネ */
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .la-folle
-  .musictheater-section-title_inner::before {
+#contents.goldenweek #contents-main .musictheater .la-folle .musictheater-section-title_inner::before {
   background-image: url(./icon_musictheater-section-title3.png);
 }
+
 
 /* 音楽と映画を楽しむ11日間　スケジュール表
 ============================================ */
@@ -856,22 +673,10 @@
   table-layout: fixed;
   width: 100%;
 }
-#contents.goldenweek #contents-main .musictheater .musictheater-table th,
-#contents.goldenweek #contents-main .musictheater .musictheater-table td {
+#contents.goldenweek #contents-main .musictheater .musictheater-table th, #contents.goldenweek #contents-main .musictheater .musictheater-table td {
   font-weight: bold;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  th
-  .table-flexbox,
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  td
-  .table-flexbox {
+#contents.goldenweek #contents-main .musictheater .musictheater-table th .table-flexbox, #contents.goldenweek #contents-main .musictheater .musictheater-table td .table-flexbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -880,21 +685,11 @@
   box-sizing: border-box;
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  td
-  .table-flexbox {
+#contents.goldenweek #contents-main .musictheater .musictheater-table td .table-flexbox {
   padding: 20px 10px;
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  td.td_theater
-  .table-flexbox {
+#contents.goldenweek #contents-main .musictheater .musictheater-table td.td_theater .table-flexbox {
   padding: 10px 5px;
 }
 
@@ -905,64 +700,26 @@
   font-weight: bold;
   font-size: 20px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th:first-of-type {
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th:first-of-type {
   width: 70px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th.saturday {
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th.saturday {
   background-color: var(--color-base-blue-dark);
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th.sunday,
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th.holiday {
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th.sunday, #contents.goldenweek #contents-main .musictheater .musictheater-table thead th.holiday  {
   background-color: var(--color-base-red-dark);
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th
-  .table-flexbox {
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th .table-flexbox {
   flex-direction: row;
   padding: 17px 10px;
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th
-  .small {
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th .small {
   font-size: 16px;
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th.nodata {
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th.nodata {
   background-color: transparent;
 }
 
@@ -972,23 +729,11 @@
   width: 70px;
   box-sizing: border-box;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  th
-  .table-flexbox {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody th .table-flexbox {
   gap: 30px;
   position: relative;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  th
-  .table-flexbox::after {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody th .table-flexbox::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1001,38 +746,22 @@
   height: 25px;
 }
 
+
 /* テーブルボディ　イベント内容 */
 #contents.goldenweek #contents-main .musictheater .musictheater-table tbody td {
   background-color: var(--color-base-white);
   position: relative;
   font-size: 14px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td.nodata {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td.nodata {
   background-color: transparent;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td
-  .table-flexbox {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td .table-flexbox {
   /* min-height: 110px; */
 }
 
 /* テーブルボディ　イベントラベル　演奏/映画 */
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td
-  .label {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td .label {
   position: absolute;
   top: 0;
   left: 0;
@@ -1042,33 +771,15 @@
   font-size: 12px;
   line-height: 1.2;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td
-  .label.label_music {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td .label.label_music {
   background-color: var(--color-base-orange-dark);
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td
-  .label.label_theater {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td .label.label_theater {
   background-color: var(--color-base-brown-dark);
 }
 
 /* テーブルボディ　使用曲 */
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td
-  .description {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td .description {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1077,14 +788,7 @@
   font-size: 11px;
   text-align: left;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td
-  .description
-  span {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td .description span {
   background-color: var(--color-base-light-gray);
   color: var(--color-base-white);
   border-radius: 5px;
@@ -1092,59 +796,28 @@
   font-size: 10px;
   line-height: 1.2;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td
-  .description
-  p {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td .description p {
   flex: 1;
   line-height: normal;
 }
 
 /* テーブルボディ　映画画像 */
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td
-  img {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td img {
   width: 100%;
 }
 
 /* ラ・フォル・ジュルネ */
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table.la-folle-table {
+#contents.goldenweek #contents-main .musictheater .musictheater-table.la-folle-table {
   margin-top: 100px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th.la-folle-day {
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th.la-folle-day {
   position: relative;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th.la-folle-day::before {
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th.la-folle-day::before {
   content: "";
   position: absolute;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th.la-folle-day.la-folle-day-icon-left::before {
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th.la-folle-day.la-folle-day-icon-left::before {
   border-top: 1px solid #a9a5a3;
   border-left: 1px solid #a9a5a3;
   top: -35px;
@@ -1152,12 +825,7 @@
   width: 15px;
   height: 25px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th.la-folle-day.la-folle-day-icon-right::before {
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th.la-folle-day.la-folle-day-icon-right::before {
   border-top: 1px solid #a9a5a3;
   border-right: 1px solid #a9a5a3;
   top: -35px;
@@ -1165,12 +833,7 @@
   width: 15px;
   height: 25px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  thead
-  th.la-folle-day.la-folle-day-title::before {
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th.la-folle-day.la-folle-day-title::before {
   background-image: url(./fig_lafollejournee2025.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1185,30 +848,15 @@
   width: 280%;
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td.la-folle-td {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td.la-folle-td {
   background-color: #f8cfbb;
 }
 
 /* アイコン */
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td.nodata {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td.nodata {
   position: relative;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td.nodata::before {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td.nodata::before {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
@@ -1216,48 +864,28 @@
   background-size: 100%;
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td.nodata.icon1::before {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td.nodata.icon1::before {
   background-image: url(./icon_musictheater-table1-1.png);
   width: 39px;
   height: 61px;
   top: 30px;
   right: 20px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td.nodata.icon2::before {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td.nodata.icon2::before {
   background-image: url(./icon_musictheater-table1-2.png);
   width: 36px;
   height: 33px;
   top: 100px;
   left: 20px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td.nodata.icon3::before {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td.nodata.icon3::before {
   background-image: url(./icon_musictheater-table2-1.png);
   width: 189px;
   height: 143px;
   top: 30px;
   left: 80px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table
-  tbody
-  td.nodata.icon4::before {
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td.nodata.icon4::before {
   background-image: url(./icon_musictheater-table2-2.png);
   width: 123px;
   height: 139px;
@@ -1265,12 +893,10 @@
   left: 70px;
 }
 
+
 /* 音楽プログラム　ニュークラシックステージ　ラ・フォル・ジュルネ
 ============================================ */
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program {
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program {
   margin-top: 50px;
 }
 /* #contents.goldenweek #contents-main .musictheater .musictheater-section-program ul {
@@ -1307,21 +933,13 @@
   margin-top: 10px;
 } */
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul {
+
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li {
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li {
   width: calc((100% - 50px) / 2);
   display: grid;
   grid-auto-columns: 160px 1fr;
@@ -1332,51 +950,26 @@
   font-size: 14px;
 }
 
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li
-  img {
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li img {
   grid-column: 1 / 2;
   grid-row: 1 / 5;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li
-  .date {
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li .date {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   border-bottom: 1px solid #a9a5a3;
   padding-bottom: 10px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li
-  .title {
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li .title {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   font-size: 20px;
   padding-top: 10px;
 }
-#contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li
-  .text {
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li .text {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   padding-top: 10px;
-  text-align: justify;
 }
 
 /* 注意事項
@@ -1390,6 +983,7 @@
   padding: 10px 20px;
   font-size: 14px;
 }
+
 
 /* ===========================================
 ***
@@ -1421,6 +1015,7 @@
 .sp #contents.goldenweek #contents-main .main-title img {
   width: 70%;
 }
+
 
 /* キャンペーン情報
 「MUSIC THEATER デジタル抽選会」「LINE公式アカウントキャンペーン」
@@ -1454,7 +1049,7 @@
 
 /* 背景画像 */
 .sp #contents.goldenweek #contents-main .bg-digital-lottery {
-  background-image: none;
+  background-image: none
 }
 
 .sp #contents.goldenweek #contents-main .campaign h3 .subtext {
@@ -1471,104 +1066,49 @@
 }
 
 /* キャンペーン期間、開催場所 */
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_term
-  dl {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_term dl {
   padding: 5px 10px;
   gap: 10px;
   text-align: center;
   font-size: 16px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_term
-  dl
-  .detabox {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_term dl .detabox {
   flex-direction: column;
 }
-
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_participate {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_participate {
   font-size: 16px;
 }
 
 /* キャンペーン概要テキスト */
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_text {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_text {
   font-size: 16px;
 }
 
 /* 参加方法 */
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply {
   padding: 0px 0px 10px 30px;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  h4 {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply h4 {
   font-size: 18px;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply::before,
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply::after {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply::before, .sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply::after {
   display: none;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol {
   flex-direction: column;
   gap: 20px;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li {
   flex-direction: row;
   text-align: left;
   position: relative;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li::before {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li::before {
   content: "";
   position: absolute;
   bottom: -47%;
@@ -1583,47 +1123,19 @@
   width: 18px;
   height: 31px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li:last-of-type:before {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li:last-of-type:before {
   display: none;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li
-  .image {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li .image {
   width: 30%;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li
-  .image::before {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li .image::before {
   display: none;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li
-  .image
-  .num {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li .image .num {
   top: 50%;
   left: -20px;
   transform: translateY(-50%);
@@ -1633,16 +1145,10 @@
   height: 30px;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.digital-lottery
-  .digital-lottery_apply
-  ol
-  li
-  .text {
+.sp #contents.goldenweek #contents-main .campaign.digital-lottery .digital-lottery_apply ol li .text {
   flex: 1;
 }
+
 
 /* LINE公式アカウントキャンペーン
 ============================*/
@@ -1653,8 +1159,7 @@
 }
 
 /* 全体 */
-.sp #contents.goldenweek #contents-main .line-campaign::before,
-.sp #contents.goldenweek #contents-main .line-campaign::after {
+.sp #contents.goldenweek #contents-main .line-campaign::before, .sp #contents.goldenweek #contents-main .line-campaign::after {
   display: none;
 }
 
@@ -1666,56 +1171,25 @@
 }
 
 /* テキスト */
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_text {
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_text {
   padding: 0;
   font-size: 12px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_text
-  .red {
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_text .red {
   font-size: 13px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_text::before,
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_text::after {
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_text::before, .sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_text::after {
   display: none;
 }
 
 /* クーポン利用期限 */
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_expire {
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_expire {
   width: 100%;
   max-width: none;
   position: relative;
   padding: 10px 38px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_expire::before,
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_expire::after {
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_expire::before, .sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_expire::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1728,11 +1202,7 @@
   width: 100px;
   height: 115px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_expire::before {
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_expire::before {
   left: -40px;
   background-image: url(./fig_linecampaign_left_sp.png);
   /* transform: rotate(20deg); */
@@ -1742,11 +1212,7 @@
   width: 80px;
   height: 140px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_expire::after {
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_expire::after {
   right: -40px;
   background-image: url(./fig_linecampaign_right_sp.png);
   /* transform: rotate(-20deg); */
@@ -1757,52 +1223,30 @@
   height: 140px;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_expire
-  dl {
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_expire dl {
   font-size: 16px;
   padding: 0;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_expire
-  .text {
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_expire .text {
   font-size: 12px;
   line-height: normal;
 }
 
 /* 公式アカウントボタン */
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_btn {
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_btn {
   width: 100%;
   font-size: 18px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_btn
-  a {
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_btn a {
   min-height: auto;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .campaign.line-campaign
-  .line-campaign_btn
-  a::after {
+
+.sp #contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_btn a::after {
   font-size: 20px;
   right: 15px;
 }
+
 
 /* 同時開催アイコン */
 .sp #contents.goldenweek #contents-main .line-campaign .dojikaisai {
@@ -1813,6 +1257,7 @@
   height: 80px;
 }
 
+
 /* 音楽と映画を楽しむ11日間
 ============================================ */
 
@@ -1822,42 +1267,21 @@
   letter-spacing: normal;
   line-height: 1.2;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-title
-  h3
-  .musictheater-title_big {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-title h3 .musictheater-title_big {
   font-size: 28px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-title
-  h3::before {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-title h3::before {
   width: 44px;
   height: 68px;
   top: 0px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-title
-  h3::after {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-title h3::after {
   width: 24px;
   height: 39px;
   bottom: 15px;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-title
-  .musictheater-title_text {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-title .musictheater-title_text {
   font-size: 16px;
 }
 
@@ -1866,21 +1290,20 @@
   margin-top: 50px;
 }
 
+
+/* ラ・フォル・ジュルネ */
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section.la-folle {
+  margin-top: 80px;
+}
+
+
 /* 音楽と映画を楽しむ11日間　各タイトル（特別プログラム、ニュークラシックステージ、ラ・フォル・ジュルネ）
 ============================================ */
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-title_inner {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-title_inner {
   padding-left: 0;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-title_inner::before {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-title_inner::before {
   /* width: 60px;
   height: 60px;
   top: 20px;
@@ -1888,22 +1311,12 @@
   display: none;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-title
-  h4 {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-title h4 {
   font-size: 20px;
   padding-left: 55px;
   position: relative;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-title
-  h4::before {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-title h4::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1913,37 +1326,23 @@
   background-size: 100%;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-title_inner
-  p {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-title_inner p {
   text-align: center;
   font-size: 15px;
 }
 
 /* 音楽と映画を楽しむKITTEのGW特別プログラム */
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .special-program
-  .musictheater-section-title
-  h4::before {
+.sp #contents.goldenweek #contents-main .musictheater .special-program .musictheater-section-title {
+  margin-bottom: 20px;
+}
+.sp #contents.goldenweek #contents-main .musictheater .special-program .musictheater-section-title h4::before {
   background-image: url(./icon_musictheater-section-title1.png);
   width: 60px;
   height: 60px;
 }
 
 /* ニュークラシックステージ */
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .newclassic-stage
-  .musictheater-section-title
-  h4::before {
+.sp #contents.goldenweek #contents-main .musictheater .newclassic-stage .musictheater-section-title h4::before {
   background-image: url(./icon_musictheater-section-title2.png);
   top: 50%;
   transform: translateY(-50%);
@@ -1954,13 +1353,7 @@
 }
 
 /* ラ・フォル・ジュルネ */
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .la-folle
-  .musictheater-section-title
-  h4::before {
+.sp #contents.goldenweek #contents-main .musictheater .la-folle .musictheater-section-title h4::before {
   background-image: url(./icon_musictheater-section-title3.png);
   top: 50%;
   transform: translateY(-50%);
@@ -1970,21 +1363,15 @@
   height: 50px;
 }
 
+
+
 /* 音楽と映画を楽しむ11日間　スケジュール表
 ============================================ */
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table_scroll {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-table_scroll {
   overflow-x: scroll;
   position: relative;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table_scroll.withtext::before {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-table_scroll.withtext::before {
   content: "";
   position: absolute;
   top: 20px;
@@ -2002,11 +1389,7 @@
   min-width: 1175px;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-table.la-folle-table {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-table.la-folle-table {
   min-width: 1400px;
   margin-top: 100px;
 }
@@ -2015,99 +1398,51 @@
 
 /* テーブルボディ　イベント内容 */
 
+
+
+
 /* 音楽プログラム　ニュークラシックステージ　ラ・フォル・ジュルネ
 ============================================ */
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-program ul {
   flex-direction: column;
   gap: 0;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li {
   width: 100%;
   display: grid;
   grid-auto-columns: 120px 1fr;
   column-gap: 10px;
   align-items: flex-start;
-  font-size: 16px;
-  padding: 20px 0;
+  font-size: 14px;
+  padding: 30px 0;
   border-bottom: 1px dashed #333333;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li:first-of-type {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li:first-of-type {
   padding-top: 0;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li:last-of-type {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li:last-of-type {
   padding-bottom: 0;
   border-bottom: none;
 }
 
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li
-  img {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li img {
   grid-column: 1 / 2;
   grid-row: 1 / 5;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li
-  .date {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li .date {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   padding-bottom: 5px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li
-  .title {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li .title {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  font-size: 18px;
+  font-size: 15px;
   padding-top: 5px;
 }
-.sp
-  #contents.goldenweek
-  #contents-main
-  .musictheater
-  .musictheater-section-program
-  ul
-  li
-  .text {
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li .text {
   grid-column: 1 / 3;
   grid-row: 5 / 6;
 }
