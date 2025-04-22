@@ -1,3059 +1,2119 @@
 @charset "utf-8";
+/* CSS Document */
 
-body.view #contents .footer .inner {
-  background: transparent;
-}
-body.view.sp #contents .footer .inner {
-  padding: 0 16px;
-}
-body.view #contents footer .footer_menu .inner {
-  background: transparent;
-}
-/*-----------
-  ナビメニュー
-  ------------*/
-#ttl .box_inner ul li {
-  width: calc(100% / 3 - 10px);
+.RinjiAllBnr {
+  display: none;
 }
 
-#ttl .box_inner ul li:nth-of-type(n + 4) {
-  width: calc(100% / 2 - 10px);
-  color: red;
+:root {
+  --fontfamily-english: "Poppins", sans-serif;
+  --fontfamily-japanese-sans-serif: "Noto Sans JP", sans-serif;
+  --fontfamily-japanese-serif: "Noto Serif JP", serif;
+  --color-base-main-bg: #f7ecea;
+  --color-base-red-dark: #b2171d;
+  --color-base-red-light: #e7290f;
+  --color-base-blue-dark: #004b59;
+  --color-base-green-light: #3aae36;
+  --color-base-orange-dark: #e18500;
+  --color-base-orange-light: #f8cfbb;
+  --color-base-brown-dark: #986d33;
+  --color-base-white: #ffffff;
+  --color-base-light-gray: #9e9e9f;
 }
 
-#ttl .box_inner ul li a {
-  background-color: #ef611f;
-  color: #fff;
-  display: block;
-  padding: 13px 0 26px;
-  line-height: 150%;
-}
-#ttl .box_inner ul li.pad23 a {
-  padding: 23px 0;
-}
-#ttl .box_inner ul {
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.sp #ttl .box_inner ul li:nth-of-type(n + 2) {
-  width: calc(100% / 2 - 5px);
-}
-.sp #ttl .box_inner ul li:nth-of-type(1) {
-  width: calc(100%);
-}
-.sp #ttl .box_inner ul li a {
-  padding: 8px 0 15px;
-}
-.sp #ttl .box_inner ul li.spp20 a {
-  padding: 20px 0;
-}
-.sp #ttl .box_inner ul {
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.sp #ttl .box_inner ul li {
-  width: calc(100% / 3 - 4px);
-}
-/* 一行の時 */
-.sp #ttl .box_inner ul li:nth-child(2) a,
-.sp #ttl .box_inner ul li:nth-child(4) a,
-.sp #ttl .box_inner ul li:nth-child(5) a {
-  line-height: 33px;
-}
-/* #ttl .box_inner ul li:nth-child(1) a,
-  #ttl .box_inner ul li:nth-child(3) a{
-    line-height: 43px;
-  }
-  .sp #ttl .box_inner ul li a{
-    line-height: 16px;
-  } */
-/*-----------
-  共通パーツ
-  ------------*/
-.flex-contents {
-  display: flex;
-}
-.m-top30 {
-  margin-top: 30px;
-}
-#contents-main .bg_selection {
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-.item-desc {
-  text-align: left;
-  font-size: 100%;
-  line-height: 1.4;
-  font-weight: bold;
-}
-/* #contents-main .box_inner h3 {
-    font-size: 12px;
-    font-weight: bold;
-    color: #666;
-    font-family: "Quicksand", sans-serif;
-    padding: 5px 0;
-    border-bottom: 2px solid #ddd;
-    width: 800px;
-    margin: 24px auto 30px;
-    text-align: left;
-  } */
-#contents-main .content_box p.ttl span {
-  font-size: 18px;
-  display: block;
-}
-/*-----------
-  共通パーツ 色
-  ------------*/
-.item-desc.green {
-  color: #005d73;
-}
-/*-----------
-  共通パーツ イベント
-  ------------*/
-#contents-main .content_box {
-  text-align: center;
-  border-radius: 20px;
-}
-#contents-main .content_box .event {
-  /* background-image: url(./bg_sinsilyun.jpg); */
-  background-repeat: repeat;
-  background-size: contain;
-  background-position: center;
-  padding: 35px 35px 0;
-}
-#contents-main .content_box .event:last-of-type {
-  /* padding-bottom: 35px; */
-}
+/* ===========================================
+***
+*** KITTE GW 2025　PC/SP共通
+***
+============================================ */
 
-#contents-main .content_box h5 {
-  font-size: 24px;
-  background-color: #18b7cd;
-  border-radius: 50px;
-  color: #fff;
-  margin: 0px 0px 10px;
-  padding: 12px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-#contents-main .content_box h5 span {
-  font-size: 18px;
-}
-#contents-main .content_box p.ttl {
-  color: #18b7cd;
-  font-size: 24px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  line-height: 130%;
-}
-#contents-main .content_box .eventinfo {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  /*padding-bottom: 35px;*/
-  border-bottom: 2px solid #18b7cd;
-  position: relative;
-}
-#contents-main #gw_fair .content_box .eventinfo {
-  padding-bottom: 35px;
-}
+/* 全体
+============================================ */
+/* body.view.goldenweek header {
+  background: rgba(255, 255, 255, 1);
+} */
 
-#contents-main .content_box:last-child .event .eventinfo {
-  border-bottom: none;
-}
-#contents-main .content_box .img_box {
-  width: calc(100% / 2 - 10px);
-}
-#contents-main .content_box .summry_box {
-  width: calc(100% / 2 - 10px);
-}
-#contents-main .content_box p.text {
-  font-size: 16px;
-  letter-spacing: 2px;
-  line-height: 150%;
-  text-align: left;
-  padding-bottom: 20px;
-  border-bottom: 3px dotted #94c62d;
-}
-#contents-main .content_box .event-info {
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: stretch;
-  margin: 20px 0 0 0;
-  position: relative;
-  justify-content: space-between;
-}
-#contents-main .content_box .eventinfo::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 0;
-  height: 0;
-  z-index: 1;
-  border-width: 15px;
-  border-color: transparent #18b7cd #18b7cd transparent;
-  border-style: solid;
-}
-
-/* #contents-main .content_box:last-of-type .eventinfo:after {
-    display: none;
-  } */
-
-#contents-main .content_box dt {
-  width: 100px;
-  background: #18b7cd;
-  padding: 5px 10px;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  font-size: 16px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#contents-main .content_box dd {
-  width: calc(100% - 120px);
-  color: #333;
-  text-align: left;
-  font-size: 17px;
-  display: flex;
-  align-items: center;
-}
-#contents-main .content_box .img_box.tokuten {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 12px 12px 0 0;
+#contents.goldenweek #contents-main.all {
   padding: 0;
-  box-sizing: border-box;
+  /* background-color: var(--color-base-main-bg); */
   position: relative;
-}
-#contents-main .content_box .img_box.tokuten img {
-  width: 100%;
-}
-.content_box .link-btn {
-  border-radius: 0 0 12px 12px;
-  padding: 0 0 40px;
-  font-size: 30px;
-  font-weight: bold;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-.content_box .link-btn p {
-  background: #fff;
-  padding: 20px 0;
-  width: 75%;
-  font-size: 22px;
+  max-width: 1560px;
   margin: 0 auto;
-}
-
-.content_box .link-btn a {
-  display: block;
-  margin: 0 auto;
-  padding: 18px 0 24px;
-  text-align: center;
-  width: 70%;
-  box-sizing: border-box;
-  background: #c85525;
-  color: #fff;
-  font-size: 24px;
-  position: relative;
-  border: 4px solid #fff;
-  border-radius: 50px;
-}
-.content_box .link-btn a::after {
-  font-family: "font Awesome 5 Free";
-  font-weight: bold;
-  content: "\f054";
-  position: absolute;
-  top: calc(50% - 12px);
-  right: 20px;
-  display: block;
-  color: #fff;
-  font-size: 24px;
-}
-
-.sp .content_box .link-btn {
-  font-size: 18px;
-  padding: 0 0 20px;
-}
-.sp .content_box .link-btn a {
-  padding: 6px 0;
-  text-align: center;
-  width: 75%;
-  font-size: 80%;
-  border-width: 3px;
-}
-.sp .content_box .link-btn a::after {
-  font-size: 16px;
-  top: calc(50% - 10px);
-}
-
-/* --------
-  共通パーツ ショップアイテム
-  -------- */
-.shop_item .item-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 0 0 40px;
-}
-.shop_item .item-list li a {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 0 20px;
-  justify-content: center;
-}
-.shop_item .item-list li .img_box {
-  width: calc(100% / 2 + 30px);
-  text-align: center;
-}
-.shop_item .item-list li .text_box {
-  width: calc(100% / 2 - 80px);
-}
-.shop_item .item-list li .item-desc {
   overflow: hidden;
-  color: #595757;
-}
-.shop_item .item-list li p span {
-  display: block;
-  color: #595757;
-  padding: 5px 0 0;
-}
-.shop_item .item-list .item_text {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  /*align-items: center;*/
-  gap: 5px;
-  margin-top: 5px;
-}
-.shop_item .item-list .item_text .price {
-  color: #595757;
-  text-align: left;
-  font-size: 100%;
-  line-height: 1.4;
-  font-weight: bold;
-  width: calc(100% - 35%);
 }
 
-.shop_item .item-list li .item_logo {
-  width: 100px;
-  /* min-height: 45px; */
+#contents.goldenweek #contents-main .inner {
+  background-color: var(--color-base-main-bg);
+  width: 100%;
+  max-width: 1560px;
+  padding-bottom: 50px;
 }
-#contents-main .item-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 10px 0 0px;
-}
-body.sp #contents #contents-main ul.item-list .item_text.pc_view,
-body.sp #contents #contents-main .pc_view,
-body.pc #contents #contents-main ul.item-list .item_text.sp_view,
-body.pc #contents #contents-main .sp_view {
-  display: none;
-}
-/* --------
-  イベントニュース
-  -------- */
-#contents-main #event .content_box.reopen h4.open {
-  padding: 25px 0 0;
-  color: #eb5e00;
-  text-align: start;
-  margin-bottom: 5px;
-}
-#contents-main #event .content_box.reopen .event-box {
-  background: #fff;
-  border: 0;
-  border: 3px solid #eb5e00;
+
+#contents.goldenweek #contents-main.all::before {
+  content: "";
+  position: absolute;
+  background-image: url(./bg_curtain.png);
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 35px 40px;
-  margin: 0 0 20px;
-  position: relative;
-  box-sizing: border-box;
-}
-#contents-main #event .content_box.reopen .ttl_box {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: center;
-  gap: 20px;
-  align-items: center;
-}
-#contents-main #event .content_box.reopen h5 {
-  background-color: rgb(235, 94, 0);
-  outline-offset: -6px;
-  font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
-  color: rgb(255, 255, 255);
-  font-size: 24px;
-  box-sizing: border-box;
-  padding: 10px 30px;
-  outline: rgb(255, 255, 255) solid 1px;
-  line-height: 130%;
-  margin: 0;
-  border-radius: 0;
-  letter-spacing: revert;
-  font-weight: normal;
-}
-#contents-main #event .content_box.reopen h5 span {
-  font-size: 18px;
-  color: #fff;
-}
-#contents-main #event .content_box.reopen .reopen_ev .ttl {
-  color: rgb(235, 94, 0);
-  font-size: 24px;
-  margin-bottom: 0px;
-  font-weight: bold;
-  line-height: 130%;
-  text-align: left;
-}
-#contents-main #event .content_box.reopen .reopen_ev .ttl span {
-  color: #6e4e3a;
-  font-weight: normal;
-}
-#contents-main #event .content_box.reopen .reopen_flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-#contents-main #event .content_box.reopen .reopen_ev .img_box {
-  width: calc(100% / 2);
-}
-#contents-main #event .content_box.reopen .reopen_ev .summry_box {
-  width: calc(100% / 2 - 50px);
-}
-#contents-main #event .content_box.reopen .reopen_ev .img_box {
-  width: calc(100% / 2);
-}
-#contents-main #event .content_box.reopen .event-box::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 0;
-  height: 0;
-  z-index: 1;
-  border-width: 20px;
-  border-color: transparent #eb5e00 #eb5e00 transparent;
-  border-style: solid;
-}
-#contents-main #event .content_box.reopen .reopen_ev .shop {
-  text-align: left;
-  margin-top: 20px;
-  font-size: 24px;
-  line-height: 150%;
-}
-#contents-main #event .content_box.reopen .reopen_ev .shop p:first-child {
-  color: rgb(235, 94, 0);
-  font-weight: bold;
-}
-#contents-main #event .content_box.reopen .reopen_ev .reopen_text {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 3px dotted #eb5e00;
-  font-size: 14px;
-  letter-spacing: 2px;
-  line-height: 130%;
-  text-align: left;
-  padding-bottom: 0;
-  color: #6e4e3a;
-}
-#contents-main #event .content_box.reopen .reopen_ev .flex {
-  display: flex;
-  align-items: center;
-  background: #eb5e00;
-  margin: 20px 0 0;
-}
-#contents-main #event .content_box.reopen .reopen_ev .flex p:first-child {
-  width: 160px;
-  background: #eb5e00;
-  color: #fff;
-  font-size: 22px;
-  letter-spacing: 3px;
-}
-#contents-main #event .content_box.reopen .reopen_ev .flex p:last-child {
-  width: calc(100% - 162px);
-  border: 1px solid #eb5e00;
-  padding: 10px;
-  text-align: left;
-  background: #fff;
-  color: #eb5e00;
-  font-weight: bold;
-}
-
-#contents-main #event h4.info {
-  padding: 25px 0 0;
-  color: #eb5e00;
-  text-align: start;
-  margin-bottom: 5px;
-}
-#contents-main #event .content_box.info_txt {
-  background: #fff;
-  border: 0;
-  border: 3px solid #eb5e00;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0 0 20px;
-  border-radius: 0;
-}
-#contents-main #event .content_box.info_txt h5 {
-  background: #eb5e00;
-  color: #fff100;
-  margin-top: 0;
-  padding: 16px 8px;
-  font-size: 23px;
-  font-weight: bold;
-  line-height: 150%;
-  text-align: center;
-  position: relative;
-  margin: 0;
-  letter-spacing: revert;
-  border-radius: 0;
-}
-#contents-main #event .content_box.info_txt .info_inner {
-  padding: 20px;
-  position: relative;
-}
-#contents-main #event .content_box.info_txt h6 {
-  background: #fff100;
-  color: #eb5e00;
-  font-size: 22px;
-  font-weight: bold;
-  padding: 16px;
-  line-height: 150%;
-  border-radius: 10px;
-}
-#contents-main #event .content_box.info_txt p {
-  font-size: 18px;
-  letter-spacing: 2px;
-  line-height: 150%;
-  text-align: left;
-  padding: 16px 0 24px;
-  width: 100%;
-}
-#contents-main #event .content_box.info_txt .flex-contents {
-  gap: 15px;
-}
-#contents-main #event .content_box.info_txt .info_inner::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 0;
-  height: 0;
-  z-index: 1;
-  border-width: 20px;
-  border-color: transparent #eb5e00 #eb5e00 transparent;
-  border-style: solid;
-}
-#contents-main #event .content_box.info_txt h6 span {
-  background: #eb5e00;
-  color: #fff;
-  font-weight: bold;
-}
-#contents-main #event .content_box.info_txt .card_rimit {
-  background: #eb5e00;
-  padding: 16px;
-}
-#contents-main #event .content_box.info_txt .card_rimit dt {
-  background: #fff000;
-  color: #eb5e00;
-  width: 100%;
-  margin-bottom: 12px;
-  font-size: 18px;
-}
-#contents-main #event .content_box.info_txt .card_rimit dd {
-  display: block;
-  color: #fff;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-}
-#contents-main #event .content_box.info_txt .card_rimit dd strong {
-  color: #fff000;
-}
-#contents-main #event .content_box.info_txt .card_rimit dd span {
-  font-size: 80%;
-  display: block;
-}
-
-/* -------------
-  トレッサカード 
-  ------------- */
-#contents-main #toreApp {
-  margin: 0 0 30px;
-}
-#contents-main #toreApp h3.tti_app {
-  background: #eb5e00;
-  color: #fff;
-  font-weight: bold;
-  font-size: 28px;
-  text-align: center;
-  padding: 16px 0;
-  border-bottom: none;
-  letter-spacing: 3px;
-  margin: 0px auto;
-  width: auto;
-}
-#contents-main #toreApp h4 {
-  padding: 0 0 15px;
-}
-#contents-main #toreApp .content_box {
-  text-align: center;
-  background-color: #fff;
-  border-radius: 0;
-  border: 3px solid #eb5e00;
-  box-sizing: border-box;
-  border-radius: 20px;
-}
-#contents-main #toreApp .app_content {
-  /* background: url(bg_app.png); */
-  background-size: contain;
-  padding: 40px;
-}
-#contents-main #toreApp .app_content .dl_text span {
-  background: #eb5e00;
-  color: #fff;
-  padding: 10px;
-  border-radius: 30px;
-  display: block;
-  width: 445px;
-  font-size: 18px;
-  margin: 0 auto 20px;
-}
-#contents-main #toreApp .app_content .dl_text {
-  background: #fff57f;
-  color: #eb5e00;
-  box-sizing: border-box;
-  font-weight: bold;
-  font-size: 34px;
-  line-height: 28px;
-  margin: 30px 0;
-  padding: 20px 10px;
-  border-radius: 30px;
-  position: relative;
-}
-#contents-main #toreApp .app_content .dl_text::after {
-  position: absolute;
-  content: "";
-  bottom: 16px;
-  right: 180px;
-  border-width: 17px;
-  border-color: transparent transparent transparent #eb5e00;
-  border-style: solid;
-}
-#contents-main #toreApp .app_content p {
-  padding: 0px 0 30px;
-}
-#contents-main #toreApp .app_content .position p:last-child {
-  /* padding: 20px 0; */
-  margin: 0 0 30px;
-}
-#contents-main #toreApp .app_content .position img {
-  width: 70%;
-}
-#contents-main #toreApp .app_content .card_info {
-  position: relative;
-  border-radius: 10px;
-  border: 3px solid #eb5e00;
-  padding: 52px 30px 30px;
-  margin: 62px 0 0;
-  background: #fff;
-}
-#contents-main #toreApp .app_content .card_info h4 {
-  display: flex;
-  position: absolute;
-  top: -38px;
-  right: 22px;
-  padding: 0px 14px;
-  background: #fff;
-  gap: 15px;
-  line-height: 33px;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 90%;
-  flex-direction: row-reverse;
-}
-#contents-main #toreApp .app_content .card_info h4 img {
-  width: 150px;
-}
-#contents-main #toreApp .app_content .card_info h4 p {
-  width: calc(100% - 165px);
-  color: #eb5e00;
-  font-size: 26px;
-  font-weight: bold;
-  padding: 0;
-}
-#contents-main #toreApp .app_content .card_info .limit {
-  background: #eb5e00;
-  border-radius: 10px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 22px;
-  padding: 15px;
-  line-height: 27px;
-}
-#contents-main #toreApp .app_content .card_info .limit p {
-  padding: 0;
-  font-size: 15px;
-}
-#contents-main #toreApp .app_content .card_info .limit p:nth-child(3) {
-  font-size: 18px;
-}
-#contents-main #toreApp .app_content .card_info .limit strong {
-  color: #fff000;
-  font-size: 30px;
-}
-#contents-main #toreApp .app_content .card_info .limit strong span {
-  font-size: 20px;
-}
-#contents-main #toreApp .app_content .card_info .limit p:nth-child(4) {
-  font-size: 14px;
-  padding: 8px 0 0;
-}
-#contents-main #toreApp .app_content .card_info h5 {
-  color: #eb5e00;
-  font-size: 22px;
-  font-weight: bold;
-  background-color: transparent;
-  border-radius: 0;
-  margin: 0;
-  line-height: 27px;
-}
-#contents-main #toreApp .app_content .card_info h5 span {
-  background: linear-gradient(transparent 50%, #fff000 50%);
-  font-size: 22px;
-}
-#contents-main #toreApp .app_content .card_info p.txt {
-  padding: 0 0 10px;
-}
-#contents-main #toreApp .app_content .card_info p.money {
-  background: #fff000;
-  font-size: 22px;
-  color: #eb5e00;
-  position: relative;
-  padding: 16px;
-  font-weight: bold;
-  border-radius: 50px;
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-#contents-main #toreApp .app_content .card_info p.money::after {
-  position: absolute;
-  content: "";
-  right: 5%;
-  top: calc(100% - 62px);
-  width: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid #eb5e00;
-  border-right: 0;
-}
-#contents-main #toreApp .app_content .tore_att {
-  color: #eb5e00;
-  font-weight: bold;
-  padding: 0;
-  text-align: center;
-  margin: 0 0 30px;
-}
-/* --------
-  box_02
-  -------- */
-#contents-main .box_02 .contents-ttl {
-  padding: 0;
-}
-#contents-main .box_02 .contents-ttl img {
-  width: 100%;
-}
-#contents-main .box_02 .bg_selection .contents-ttl {
-  padding: 0px 20px 0;
-}
-#contents-main .box_02 .content_box h5 {
-  background-color: #00a0e9;
-}
-#contents-main .box_02 .content_box p.text {
-  border-bottom: 3px dotted #815333;
-}
-#contents-main .box_02 .content_box .bei p.text {
-  border-bottom: none;
-}
-#contents-main .box_02 .content_box dt {
-  background: #00a0e9;
-}
-#contents-main .box_02 .content_box .eventinfo::after {
-  border-color: transparent #815333 #815333 transparent;
-}
-#contents-main .box_02 .content_box p.ttl {
-  color: #00a0e9;
-}
-#contents-main .box_02 .content_box p.ttl span {
-  font-size: 18px;
-  display: block;
-}
-#contents-main .box_02 .content_box:not(:first-child) {
-  margin: 32px 0 0;
-}
-#contents-main .box_02 .content_box .eventinfo {
-  border-bottom: 2px solid #815333;
-}
-#contents-main .box_box_0201 .content_box .event:last-child .eventinfo {
-  border-bottom: none;
-}
-/* --------
-  イベントニュース
-  -------- */
-#contents-main #eve_info .content_box {
-  background: transparent;
-}
-#contents-main #eve_info .bg_selection {
-  background: #fffbda;
-  border: 3px solid #e95377;
-  border-radius: 20px;
-  padding: 0 0 35px;
-  margin: 0;
-}
-#contents-main #eve_info .content_box h5 {
-  background: #e95377;
-}
-#contents-main #eve_info .content_box p.ttl {
-  color: #e95377;
-  display: inline-block;
-  text-align: left;
-  font-size: 30px;
-}
-#contents-main #eve_info .content_box p.ttl span.small {
-  font-size: 24px;
-}
-#contents-main #eve_info .content_box p.ttl.sab {
-  font-size: 20px;
-}
-#contents-main #eve_info .content_box p.ttl.sab_ttl {
-  font-size: 18px;
-  text-align: left;
-  padding: 20px 0 0;
-}
-#contents-main #eve_info .content_box .eventinfo.electronic {
-  justify-content: center;
-}
-#contents-main #eve_info .content_box p.text {
-  border-bottom: 3px dotted #e95377;
-}
-#contents-main #eve_info .content_box .eventinfo::after {
-  border-color: transparent #e95377 #e95377 transparent;
-}
-
-#contents-main #eve_info .content_box dt {
-  background: #e95377;
-}
-#contents-main .content_box .eventinfo {
-  border-bottom: 2px solid #18b7cd;
-  padding: 0 0 30px;
-}
-#contents-main #eve_info .content_box dt.toresai {
-  width: 100%;
-  background: transparent;
-  color: #333;
-  padding: 0;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-weight: normal;
-  color: #e95377;
-  font-weight: bold;
-}
-#contents-main #eve_info .content_box dt p {
-  text-align: left;
-}
-#contents-main .content_box .eventinfo.bo_none {
-  border-bottom: 3px dotted #e95377;
-}
-#contents-main .content_box .eventinfo.bo_none.thin {
-  border-bottom: 3px dotted #eacea4;
-  flex-direction: row-reverse;
-}
-#contents-main .content_box .eventinfo.bo_none.thin_none {
-  border-bottom: none;
-  flex-direction: row-reverse;
-}
-#contents-main #eve_info .content_box .eventinfo.bo_none::after {
-  border-width: 0;
-}
-#contents-main .content_box .eventinfo.no_img {
-  justify-content: flex-end;
-}
-#contents-main .content_box .event .ev_bg {
-  background: #fff;
-  padding: 10px 40px;
-  border-radius: 10px;
-}
-#contents-main #eve_info .content_box .summry_box .atten {
-  text-align: left;
-}
-/* 250120追加 クーポン画像 */
-/*#contents-main .coupon img{
-    width: 100%;
-  }*/
-/* --------
-  キャンペーン
-  -------- */
-.bg_selection .cam {
-  padding: 20px 0 0;
-}
-.bg_selection .cam .img_box {
-  padding: 0 0 20px;
-  width: 100%;
-  text-align: center;
-}
-/* --------
-  Life
-  -------- */
-#contents-main #halo .shop_item .item-list li .img_box {
-  width: 100%;
-}
-#contents-main #halo .shop_item .item-list li .text_box {
-  width: 100%;
-}
-#contents-main #halo {
-  background: url(./bg_newlife.jpg);
-  margin: 0 0 40px;
-  background-size: contain;
-  padding: 10px 0 35px;
-  position: relative;
-}
-#contents-main #halo::before {
-  position: absolute;
-  content: "";
-  background: url(./bg_newlife_pc_bottom.jpg);
-  background-size: contain;
+  background-size: 130% auto;
   background-repeat: no-repeat;
   width: 100%;
-  height: 430px;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-}
-#contents-main #halo::after {
-  position: absolute;
-  content: "";
-  background: url(./life_coupon.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 50%;
-  height: 445px;
-  bottom: 0px;
-  right: -2px;
-  z-index: 1;
-}
-
-.pc #contents-main #halo .btn_coupon {
-  position: absolute;
-  width: 50%;
-  height: 445px;
-  bottom: 0px;
-  right: 0;
-  z-index: 2;
-}
-.pc #contents-main #halo .btn_coupon a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  height: 650px;
+  max-width: 1560px;
+  min-width: 960px;
   top: 0;
-  left: 0;
+  left: auto;
+  /* transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%); */
+  z-index: 2;
+  transition: all 0.2s;
+  pointer-events: none;
 }
 
-#contents-main #halo .content_box {
-  background: transparent;
+#contents.goldenweek #contents-main.all.noheader::before {
+  top: 0;
+  position: fixed;
 }
-#contents-main #halo .bg {
-  position: relative;
-  z-index: 1;
-  width: 90%;
+
+#contents.goldenweek #contents-main.all.nocutaiin::before {
+  opacity: 0;
+}
+
+#contents.goldenweek #contents-main article {
+  margin-bottom: 30px;
+  max-width: 1110px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+  .pc #contents.goldenweek #contents-main.all::before {
+    background-size: 140% auto;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .pc #contents.goldenweek #contents-main.all::before {
+    background-size: 150% auto;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .pc #contents.goldenweek #contents-main.all::before {
+    background-size: 160% auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .pc #contents.goldenweek #contents-main.all::before {
+    background-image: none;
+  }
+}
+
+/* メインタイトル
+============================================ */
+#contents.goldenweek #contents-main .main-title h2 {
   padding: 0;
 }
-#contents-main #halo .bg::after {
-  content: "";
-  position: absolute;
-  bottom: -50px;
-  right: 0;
-  width: 100%;
-  height: 130px;
-  pointer-events: none;
-  z-index: -1;
-}
-#contents-main #halo .bg.living {
-  background: url(./bg_living.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-}
-#contents-main #halo .bg.living::after {
-  background-image: url(./bg_btm_living.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: 0px;
-  background-position: bottom;
-}
-#contents-main #halo .bg.kitchen {
-  background: url(./bg_kitchen.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-}
-#contents-main #halo .bg.kitchen::after {
-  background-image: url(./bg_btn_kitchen.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-#contents-main #halo .bg.bath {
-  background: url(./bg_bath.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-}
-#contents-main #halo .bg.bath::after {
-  background-image: url(./bg_btn_bath.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 127px;
-}
-#contents-main #halo .bg.bedroom {
-  background: url(./bg_bedroom.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-}
-#contents-main #halo .bg.bedroom::after {
-  background-image: url(./bg_btn_bedroom.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-#contents-main #halo .bg.bedroom .item-list {
-  justify-content: flex-start;
-}
-#contents-main #halo h4 {
-  text-align: center;
-  padding: 20px 0 0;
-  width: 30%;
-  margin: 0 auto;
-}
-#contents-main #halo .shop_item {
-  padding: 0px 40px 70px;
-}
-#contents-main #halo .shop_item li {
-  width: calc(100% / 2 - 20px);
-}
-#contents-main #halo h5 {
-  text-align: right;
-}
-#contents-main #halo h5 img {
-  width: 100%;
+#contents.goldenweek #contents-main .main-title img {
+  max-width: 720px;
 }
 
-#contents-main #halo .shop_item .item-list .item_text {
+/* キャンペーン情報
+「MUSIC THEATER デジタル抽選会」「LINE公式アカウントキャンペーン」
+============================================ */
+#contents.goldenweek #contents-main .campaign {
+  background-color: var(--color-base-white);
+  border-radius: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 50px;
+  margin-top: 50px;
 }
-#contents-main #halo .shop_item .item-list .item_text::after {
-  content: "新生活クーポン対象店";
-  font-size: 80%;
+
+/* タイトル */
+#contents.goldenweek #contents-main .campaign h3 {
+  font-size: 24px;
   font-weight: bold;
-  background: #e9807a;
-  color: #fff;
-  padding: 0 6px 1px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-#contents-main #halo .living .shop_item li:nth-child(-n + 3) .item_text::after,
-#contents-main #halo .kitchen .shop_item li:nth-child(1) .item_text::after {
-  bottom: -20px;
-}
-
-#contents-main #halo .shop_item .item-list .item_text.nocoupon::after {
-  display: none;
-}
-
-/*個別特別処理*/
-
-#contents-main #halo .living .shop_item li {
-  width: calc(100% / 3 - 20px);
-}
-#contents-main #halo .living .shop_item li:nth-of-type(4),
-#contents-main #halo .living .shop_item li:nth-of-type(5) {
-  width: calc(100% / 2 - 20px);
-}
-#contents-main #halo .living .shop_item li:nth-child(-n + 3) .item_text .price {
-  width: 100%;
-}
-
-.pc #contents-main #halo .living .shop_item li:nth-child(-n + 3) .item_text {
-  gap: 0;
-}
-
-.pc #contents-main #halo .kitchen .shop_item {
-  padding: 0px 40px 90px;
-}
-
-/* --------
-  新生活
-  -------- */
-#contents-main #newLife {
-  margin: 0 auto 60px;
-}
-#contents-main #newLife .shop_item .item-list li .item-desc {
-  color: #e7336e;
-}
-#contents-main #newLife .shop_item .item-list li:nth-of-type(5) .item-desc,
-#contents-main #newLife .shop_item .item-list li:nth-of-type(6) .item-desc,
-#contents-main #newLife .shop_item .item-list li:nth-of-type(7) .item-desc {
-  color: #00aebb;
-}
-#contents-main #newLife .content_box {
   background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  line-height: 1.2;
 }
-#contents-main #newLife .bg_selection {
-  background: url(./bg_02_01.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-  position: relative;
-  z-index: 1;
-  padding: 0 25px 35px 35px;
-}
-#contents-main #newLife .bg_selection::after {
-  content: "";
-  background-image: url(./bg_02_02.jpg);
-  position: absolute;
-  bottom: -55px;
-  right: 0;
-  width: 100%;
-  height: 20%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: none;
-  z-index: -1;
-}
-#contents-main #newLife .content_box h5 {
-  background-color: #e73273;
-}
-#contents-main #newLife .item-desc strong {
+
+/* キャンペーン期間、開催場所 */
+#contents.goldenweek #contents-main .campaign .campaign_term dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 30px;
+  font-weight: bold;
   font-size: 20px;
-  display: block;
-  width: 260px;
 }
-#contents-main #newLife .item-desc strong span {
-  font-size: 15px;
-  display: inline-block;
-  color: #fff;
+#contents.goldenweek #contents-main .campaign .campaign_term dl .detabox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#contents-main #newLife .item_text .price strong {
-  display: block;
-  background: #eb5e00;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  margin: 10px 0 0;
-}
-#contents-main #newLife .item_text .price span {
-  display: inline;
-  color: #fff;
+/* 備考 */
+#contents.goldenweek #contents-main .campaign .campaign_remark {
+  font-size: 14px;
+  line-height: normal;
+  text-align: justify;
 }
 
-/* 250120追加 newopen */
-#contents-main #info {
-  margin: 0 0 30px;
+/* MUSIC THEATER デジタル抽選会
+============================*/
+
+/* 背景画像 */
+#contents.goldenweek #contents-main .bg-digital-lottery {
+  background-image: url(./bg_digital-lottery1.png);
+  background-position: left 130px top 32px;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
-#contents-main #info .content_box {
-  text-align: center;
-  background-color: #fff;
-  border-radius: 0;
-  border: 3px solid #208040;
-  box-sizing: border-box;
-}
-#contents-main #info h3 {
-  background: #208040;
-  color: #fff;
+
+/* タイトル */
+#contents.goldenweek #contents-main .campaign.digital-lottery h3 {
+  font-size: 24px;
   font-weight: bold;
-  font-size: 34px;
-  text-align: center;
-  padding: 16px 0;
-  border-bottom: none;
-  letter-spacing: 3px;
-  margin: 0px auto;
-  width: auto;
-  font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
-    "メイリオ", "Meiryo", "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+  background: transparent;
+  color: var(--color-base-red-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
 }
-#contents-main #info .new_content {
-  font-size: 26px;
-  color: #208040;
-  font-weight: bold;
-  padding: 20px 40px;
+#contents.goldenweek #contents-main .campaign.digital-lottery h3 .subtext {
+  font-size: 32px;
   position: relative;
+  background-image: url(./icon_digitalLotteryApply_title1.png),
+    url(./icon_digitalLotteryApply_title2.png);
+  background-repeat: no-repeat;
+  background-position: left, right;
+  background-size: 60px;
+  padding: 10px 90px 10px 93px;
+  margin-bottom: 15px;
 }
-#contents-main #info .new_content::after {
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  h3
+  .subtext::before,
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  h3
+  .subtext::after {
   content: "";
   position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 0;
-  height: 0;
-  z-index: 1;
-  border-width: 20px;
-  border-color: transparent #208040 #208040 transparent;
-  border-style: solid;
-}
-#contents-main #info .content_box.rest .new_content::after {
-  border-color: transparent #e50012 #e50012 transparent;
-}
-#contents-main #info .new_content p:first-of-type {
-  margin: 0 0 20px;
-  line-height: 35px;
-  letter-spacing: 2px;
-}
-#contents-main #info .content_box.rest {
-  border: 3px solid #e50012;
-}
-#contents-main #info .content_box.rest h3 {
-  color: #fff23f;
-  background: #e50012;
-}
-#contents-main #info .content_box.rest p {
-  color: #000;
-  line-height: 52px;
-  margin: 0;
-}
-#contents-main #info .content_box.rest strong {
-  color: #e50012;
-  font-size: 54px;
-  font-weight: bold;
-  background: linear-gradient(transparent 60%, yellow 30%);
-  display: inline-block;
-}
-#contents-main #info .content_box.rest span {
-  font-size: 28px;
-}
-#contents-main #info .content_box.rest {
-  font-size: 26px;
-  color: #208040;
-  font-weight: bold;
-}
-
-/* ------------------------------------------------------------------
-20250301公開分記述ここから
---------------------------------------------------------------------- */
-
-/* ----------------------
-タイトル
------------------------ */
-#snews-17th .contents-ttl {
-  background-image: url(./bg_17th_top.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  position: relative;
-}
-
-/* #contents-main .box_inner > h3 {
-  font-size: 12px;
-  font-weight: bold;
-  color: #666;
-  font-family: "Quicksand", sans-serif;
-  padding: 5px 0;
-  border-bottom: 2px solid #ddd;
-  margin: 24px auto 30px;
-  text-align: left;
-} */
-
-.sp #contents-main .box_inner > h3 {
-  font-size: 90%;
-  width: 94%;
-  padding: 0px 0 5px;
-  margin: 30px auto 20px;
-}
-
-/* ----------------------
-17周年イベント
------------------------ */
-
-.snews-17th_event {
-  background-image: url(./bg_17th_top.jpg), url(./bg_17th_whole.jpg);
-  background-position: top, center;
-  background-size: contain;
-  background-repeat: no-repeat, repeat-y;
-  padding: 0 0 50px 0;
-}
-.sp .snews-17th_event {
-  padding: 0 0 25px 0;
-}
-
-/* .snews-17th_event-box {
-    background-image: url(./bg_17th_event_single_top.png), url(./bg_17th_event_single_bottom.png), url(./bg_17th_event_single_middle.png);
-    background-position: top, bottom -1% center, top 80% center;
-    background-size: 100%;
-    background-repeat: no-repeat, no-repeat, repeat-y;
-    width: 95%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 20px;
-
-    box-sizing: border-box;
-} */
-
-.snews-17th_event-box {
-  background-image: url(./bg_17th_event_single_middle.png);
-  background-position: top 31px center;
-  background-size: 100.8% auto;
-  background-repeat: repeat-y;
-  width: 95%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  padding: 20px;
-
-  box-sizing: border-box;
-
-  position: relative;
-}
-
-.sp .snews-17th_event-box {
-  padding: 20px 10px 10px 10px;
-  background-position: top 10px center;
-}
-
-.snews-17th_event-box::before,
-.snews-17th_event-box::after {
-  position: absolute;
-  content: "";
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  z-index: 1;
 }
-.snews-17th_event-box::before {
-  background-image: url(./bg_17th_event_single_top.png);
-  background-position: top;
-  top: -3px;
-  height: 50px;
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  h3
+  .subtext::before {
+  border: 1px solid var(--color-base-red-dark);
+  width: 67%;
+  bottom: 5px;
 }
-.snews-17th_event-box::after {
-  background-image: url(./bg_17th_event_single_bottom.png);
-  background-position: bottom;
-  bottom: -6px;
-  height: 78px;
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  h3
+  .subtext::after {
+  /* 後回し */
 }
-
-.snews-17th_event-box_inner {
-  background-color: #fffded;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  padding-top: 27px;
-  z-index: 3;
+#contents.goldenweek #contents-main .campaign.digital-lottery h3 .maintext {
+  font-size: 56px;
 }
 
-.snews-17th_event-box_inner h4 {
+/* キャンペーン期間、開催場所 */
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_term
+  dl {
+  border: 1px solid var(--color-base-red-dark);
+  color: var(--color-base-red-dark);
+}
+
+/* 参加人数 */
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_participate {
+  background-color: var(--color-base-red-dark);
+  color: var(--color-base-white);
+  padding: 3px 10px;
+  font-size: 20px;
+}
+
+/* キャンペーン概要テキスト */
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_text {
+  color: var(--color-base-blue-dark);
+  font-weight: bold;
+  font-size: 20px;
   text-align: center;
+}
+
+/* 参加方法 */
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply {
+  position: relative;
+  border: 1px solid var(--color-base-blue-dark);
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply::before {
+  content: "";
+  position: absolute;
+  background-image: url(./bg_digital-lottery3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 39px;
+  height: 61px;
+  left: -76px;
+  bottom: -60px;
+}
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply::after {
+  content: "";
+  position: absolute;
+  background-image: url(./bg_digital-lottery2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 63px;
+  height: 113px;
+  right: -90px;
+  top: -50px;
+}
+
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  h4 {
+  position: absolute;
+  top: -1em;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  background-color: var(--color-base-white);
+  color: var(--color-base-blue-dark);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 40px;
+}
+
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li
+  .image {
+  position: relative;
+  /* z-index: -1; */
+}
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li
+  .image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -25%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+
+  background-image: url(./icon_digital-lottery_apply.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 18px;
+  height: 31px;
+}
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li:last-of-type
+  .image::before {
+  display: none;
+}
+
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li
+  .image
+  .num {
   position: absolute;
   top: -15px;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  z-index: 3;
+  background-color: var(--color-base-blue-dark);
+  color: var(--color-base-white);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.snews-17th_event-box_inner h4 img {
-  width: 250px;
-}
-.sp .snews-17th_event-box_inner h4 {
-  width: 70%;
+#contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li
+  .text {
+  color: var(--color-base-blue-dark);
+  font-weight: bold;
 }
 
-/* コンテンツ内容 */
-.snews-17th_event-box_content {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
+/* LINE公式アカウントキャンペーン
+============================*/
+
+/* 背景画像 */
+#contents.goldenweek #contents-main .bg-line-campaign {
+  background-image: url(./bg-line-campaign1.png);
+  background-position: right 130px top -40px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-top: 50px;
+}
+
+/* 全体 */
+#contents.goldenweek #contents-main .line-campaign {
+  margin-top: 0;
+  position: relative;
+}
+#contents.goldenweek #contents-main .line-campaign::before {
+  content: "";
+  position: absolute;
+  top: 400px;
+  left: -30px;
+  background-image: url(./bg-line-campaign2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 62px;
+  height: 61px;
+}
+#contents.goldenweek #contents-main .line-campaign::after {
+  content: "";
+  position: absolute;
+  top: 200px;
+  right: -65px;
+  background-image: url(./bg-line-campaign3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 71px;
+  height: 435px;
+}
+
+/* 同時開催アイコン */
+#contents.goldenweek #contents-main .line-campaign .dojikaisai {
+  position: absolute;
+  top: -35px;
+  left: 0;
+}
+
+/* タイトル */
+#contents.goldenweek #contents-main .campaign.line-campaign h3 {
+  color: var(--color-base-green-light);
+  gap: 10px;
+}
+
+#contents.goldenweek #contents-main .campaign.line-campaign h3 .subtext {
+  font-size: 32px;
+}
+#contents.goldenweek #contents-main .campaign.line-campaign h3 .maintext {
+  font-size: 56px;
+}
+
+/* テキスト */
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_text {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6;
+  width: 100%;
+  position: relative;
+  padding: 0 190px;
   box-sizing: border-box;
+}
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_text::before,
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 190px;
+  height: 230px;
+}
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_text::before {
+  left: 0;
+  background-image: url(./fig_linecampaign_left.png);
+}
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_text::after {
+  right: 0;
+  background-image: url(./fig_linecampaign_right.png);
+}
 
-  padding: 30px 30px 30px 30px;
-}
-.sp .snews-17th_event-box_content {
-  padding: 20px;
-}
-.snews-17th_event-box_content.col {
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_text
+  .red {
+  color: var(--color-base-red-light);
+  font-size: 24px;
 }
 
-.snews-17th_event-box_content.col .img {
-  width: 100%;
+/* キャンペーン期間 */
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_term
+  dl {
+  border: 1px solid var(--color-base-green-light);
+  color: var(--color-base-green-light);
 }
-
-.snews-17th_event-box_content.row {
-  flex-direction: row;
-  align-items: stretch;
-  gap: 50px;
-}
-.sp .snews-17th_event-box_content.row {
-  flex-direction: column;
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_term
+  dl
+  .detabox {
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 10px 20px;
 }
 
-.snews-17th_event-box_content.img-only {
-  /* padding-top: 30px; */
-  gap: 50px;
+/* クーポン利用期限 */
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_expire {
+  background-color: var(--color-base-red-light);
+  color: var(--color-base-white);
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  width: 75%;
+  /* max-width: 600px; */
+  box-sizing: border-box;
 }
-.sp .snews-17th_event-box_content.img-only {
-  flex-direction: column;
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_expire
+  dl {
+  font-size: 24px;
+}
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_expire
+  .text {
+  font-size: 18px;
+}
+
+/* 公式アカウントボタン */
+#contents.goldenweek #contents-main .campaign.line-campaign .line-campaign_btn {
+  background-color: var(--color-base-green-light);
+  color: var(--color-base-white);
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 24px;
+  width: 75%;
+  /* max-width: 600px; */
+}
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_btn
+  a {
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0;
-  padding: 10px 20px;
+  height: 100%;
+  min-height: 100px;
+  color: var(--color-base-white);
+  padding: 10px;
+  line-height: 1.6;
+  position: relative;
 }
-
-.snews-17th_event-box_content .pink {
-  background-color: #ea6094;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 6px;
-  transform: rotate(2deg);
+#contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_btn
+  a::after {
+  font-family: "font Awesome 5 Free";
   font-weight: bold;
-  font-size: 20px;
-  line-height: normal;
-}
-.sp .snews-17th_event-box_content .pink {
-  font-size: 14px;
-}
-
-.snews-17th_event-box_content .text_pink {
-  color: #ea6094;
-  font-weight: bold;
-  font-size: 20px;
-  align-self: flex-start;
-  border: 1px solid #ea6094;
-  background-color: #fff;
-  width: 100%;
-  text-align: center;
-  padding: 5px 0;
-  margin-top: 20px;
-}
-.sp .snews-17th_event-box_content .text_pink {
-  margin-bottom: 10px;
+  content: "\f105";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  display: block;
+  color: var(--color-base-white);
+  font-size: 32px;
 }
 
-.snews-17th_event-box_content .img {
-  flex-shrink: 0;
-  text-align: center;
-  width: 50%;
-}
-.sp .snews-17th_event-box_content .img {
-  width: 100%;
-}
-.sp .snews-17th_event-box_content .img img {
-  width: 100%;
-}
-.snews-17th_event-box_content.img-only .img {
-  width: 50%;
-}
-.snews-17th_event-box_content.img-only .img img {
-  width: 100%;
-}
-.sp .snews-17th_event-box_content.img-only .img {
-  width: 100%;
-}
-.sp .snews-17th_event-box_content.img-only .img img {
-  width: 100%;
-}
+/* 音楽と映画を楽しむ11日間
+============================================ */
 
-.sp .snews-17th_event-box_content.row img {
-  width: 100%;
-}
-
-.snews-17th_event-box_content .text {
-  width: 100%;
-  text-align: justify;
-}
-.snews-17th_event-box.item01 .snews-17th_event-box_content .text {
-  text-align: center;
-}
-
-.snews-17th_event-box_content .description {
+/* メインタイトル */
+#contents.goldenweek #contents-main .musictheater .musictheater-title {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.snews-17th_event-box_content.img-only .description {
-  width: 50%;
-}
-.sp .snews-17th_event-box_content.img-only .description {
-  width: 100%;
-}
-
-.snews-17th_event-box_content.img-only .description img {
-  align-self: flex-start;
-  width: 85%;
+#contents.goldenweek #contents-main .musictheater .musictheater-title h3 {
+  background-color: transparent;
+  color: var(--color-base-red-dark);
+  font-size: 36px;
+  letter-spacing: 0.2em;
+  line-height: normal;
+  position: relative;
 }
 
-.item05 .snews-17th_event-box_content.img-only .description img {
-  width: 90%;
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-title
+  h3::before,
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-title
+  h3::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-title
+  h3::before {
+  background-image: url(./icon_musictheater-title1.png);
+  width: 88px;
+  height: 137px;
+  left: -90px;
+  top: -10px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-title
+  h3::after {
+  background-image: url(./icon_musictheater-title2.png);
+  width: 48px;
+  height: 79px;
+  right: -80px;
+  bottom: -70px;
 }
 
-.sp .snews-17th_event-box_content.img-only .description img {
-  width: 100%;
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-title
+  h3
+  .musictheater-title_big {
+  font-size: 42px;
+  letter-spacing: 0.1em;
 }
 
-.snews-17th_event-box_content .description .icon {
-  color: #fff;
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-title
+  .musictheater-title_text {
+  color: var(--color-base-blue-dark);
+  text-align: center;
   font-weight: bold;
-  clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
-  padding: 3px 15px 3px 10px;
-  line-height: 1.2em;
+  border-bottom: 1px solid var(--color-base-blue-dark);
+  padding-bottom: 15px;
   font-size: 20px;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-.sp .snews-17th_event-box_content .description .icon {
-  position: static;
-}
-
-.snews-17th_event-box_content .description .icon.icon-orange {
-  background-color: #eb5e00;
-}
-.snews-17th_event-box_content .description .icon.icon-red {
-  background-color: #e60012;
-  margin-top: 10px;
-}
-.snews-17th_event-box_content .description .icon.icon-blue {
-  background-color: #1a96d5;
-}
-.snews-17th_event-box_content .description .icon.icon-pink {
-  background-color: #ee869a;
-  margin-top: 10px;
-}
-
-/* トレッサポイント2倍 */
-.item03 {
-  position: relative;
-}
-
-.item03 .snews-17th_event-box_content.img-only .img {
-  width: 50%;
-}
-.sp .item03 .snews-17th_event-box_content.img-only .img {
-  width: 100%;
-}
-.sp .item03 .snews-17th_event-box_content.img-only .img img {
-  width: 100%;
-}
-.item03 .snews-17th_event-box_content.img-only .description {
-  margin-top: 30px;
-}
-
-/* .item03 .snews-17th_event-box_content.img-only .img {
-  position: relative;
-  text-align: center;
-}
-.item03 .snews-17th_event-box_content.img-only .img::after {
-  position: absolute;
-  content: "";
-  background-image: url(bnr_tressa_point_5times_up.png);
-  background-repeat: no-repeat;
-  background-size: 120px;
-  width: 120px;
-  height: 100px;
-  top: 30px;
-  right: -20px;
-  z-index: 1;
-  pointer-events: none;
-} */
-
-/* .item03::before {
-  position: absolute;
-  content: "";
-  background-image: url(bnr_tressa_point_5times_up.png);
-  background-repeat: no-repeat;
-  background-size: 120px;
-  width: 120px;
-  height: 100px;
-  top: 0;
-  right: 40px;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.sp .item03::before {
-  background-size: 25VW;
-  width: 25VW;
-  height: 25VW;
-  top: 42%;
-  right: 0;
-} */
-
-/* .item03 .snews-17th_event-box_content .description {
-    justify-content: flex-start;
-    margin-top: 45px;
-}
-.item03 .snews-17th_event-box_content .description img {
-  align-self: flex-start;
-}
-
-.item03 .snews-17th_event-box_content .text {
-    font-family: "FP-ヒラギノ丸ゴ StdN W8", sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: normal;
-    text-align: center;
-}
-.item03 .snews-17th_event-box_content .text .red {
-    font-size: 38px;
-    color: #e60012;
-}
-.item03 .snews-17th_event-box_content .text .emphasis {
-    -webkit-text-emphasis: filled red;
-  text-emphasis: filled red;
-} */
-
-/* モビリティフェス */
-#contents-main .snews-17th_event-box.mobility-fes .snews-17th_event-box_inner {
-  padding-bottom: 30px;
-}
-.sp
-  #contents-main
-  .snews-17th_event-box.mobility-fes
-  .snews-17th_event-box_inner {
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.sp
-  #contents-main
-  .snews-17th_event-box.mobility-fes
-  .snews-17th_event-box_inner
-  .event {
-  padding: 10px 20px;
-}
-
-#contents-main .snews-17th_event-box .mobility-fes_main-text {
-  font-size: 24px;
-  color: #18b7cd;
-  font-weight: bold;
-  padding: 0 40px;
-  text-align: center;
   line-height: normal;
 }
 
-.sp #contents-main .snews-17th_event-box .mobility-fes_main-text {
-  padding: 0 20px;
+/* 各セクション */
+#contents.goldenweek #contents-main .musictheater .musictheater-section {
+  margin-top: 80px;
+}
+
+/* 音楽と映画を楽しむ11日間　各タイトル（特別プログラム、ニュークラシックステージ、ラ・フォル・ジュルネ）
+============================================ */
+#contents.goldenweek #contents-main .musictheater .musictheater-section-title {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  font-weight: bold;
+  /* margin-left: 80px; */
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-title_inner {
+  padding-left: 90px;
+  position: relative;
+  letter-spacing: 0.15em;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-title_inner::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 75px;
+  height: 75px;
+}
+
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-title
+  h4 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-title
+  h4
+  .red {
+  color: var(--color-base-red-dark);
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-title
+  h4
+  .blue {
+  color: var(--color-base-blue-dark);
+}
+
+/* 音楽と映画を楽しむKITTEのGW特別プログラム */
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .special-program
+  .musictheater-section {
+  margin-top: 50px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .special-program
+  .musictheater-section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .special-program
+  .musictheater-section-title_inner::before {
+  background-image: url(./icon_musictheater-section-title1.png);
+}
+
+/* ニュークラシックステージ */
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .newclassic-stage
+  .musictheater-section-title_inner::before {
+  background-image: url(./icon_musictheater-section-title2.png);
+}
+
+/* ラ・フォル・ジュルネ */
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .la-folle
+  .musictheater-section-title_inner::before {
+  background-image: url(./icon_musictheater-section-title3.png);
+}
+
+/* 音楽と映画を楽しむ11日間　スケジュール表
+============================================ */
+#contents.goldenweek #contents-main .musictheater .musictheater-table {
+  border-collapse: separate;
+  border-spacing: 7px;
+  margin-top: 50px;
+  table-layout: fixed;
+  width: 100%;
+}
+#contents.goldenweek #contents-main .musictheater .musictheater-table th,
+#contents.goldenweek #contents-main .musictheater .musictheater-table td {
+  font-weight: bold;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  th
+  .table-flexbox,
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  td
+  .table-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  td
+  .table-flexbox {
+  padding: 20px 10px;
+}
+
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  td.td_theater
+  .table-flexbox {
+  padding: 10px 5px;
+}
+
+/* テーブルヘッダー　日付 */
+#contents.goldenweek #contents-main .musictheater .musictheater-table thead th {
+  color: var(--color-base-white);
+  background-color: var(--color-base-light-gray);
+  font-weight: bold;
+  font-size: 20px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th:first-of-type {
+  width: 70px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th.saturday {
+  background-color: var(--color-base-blue-dark);
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th.sunday,
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th.holiday {
+  background-color: var(--color-base-red-dark);
+}
+
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th
+  .table-flexbox {
+  flex-direction: row;
+  padding: 17px 10px;
+}
+
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th
+  .small {
   font-size: 16px;
 }
 
-#contents-main .snews-17th_event-box.mobility-fes .content_box .summry_box {
-  width: calc(60% - 10px);
-}
-#contents-main
-  .snews-17th_event-box.mobility-fes
-  .content_box
-  .summry_box
-  .text {
-  border-bottom: 3px dotted #18b7cd;
-}
-#contents-main .snews-17th_event-box.mobility-fes .content_box .img_box {
-  width: calc(40% - 10px);
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th.nodata {
+  background-color: transparent;
 }
 
-.sp #contents-main .snews-17th_event-box.mobility-fes .content_box .summry_box {
-  width: 100%;
+/* テーブルボディ　時間 */
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody th {
+  border: 1px solid #000;
+  width: 70px;
+  box-sizing: border-box;
 }
-.sp #contents-main .snews-17th_event-box.mobility-fes .content_box .img_box {
-  width: 100%;
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  th
+  .table-flexbox {
+  gap: 30px;
+  position: relative;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  th
+  .table-flexbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #000;
+  width: 1px;
+  height: 25px;
 }
 
-#contents-main
-  .snews-17th_event-box.mobility-fes
-  .content_box
-  .eventinfo.img-only {
+/* テーブルボディ　イベント内容 */
+#contents.goldenweek #contents-main .musictheater .musictheater-table tbody td {
+  background-color: var(--color-base-white);
+  position: relative;
+  font-size: 14px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td.nodata {
+  background-color: transparent;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td
+  .table-flexbox {
+  /* min-height: 110px; */
+}
+
+/* テーブルボディ　イベントラベル　演奏/映画 */
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td
+  .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--color-base-white);
+  padding: 5px 5px;
+  border-radius: 0 0 5px 0;
+  font-size: 12px;
+  line-height: 1.2;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td
+  .label.label_music {
+  background-color: var(--color-base-orange-dark);
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td
+  .label.label_theater {
+  background-color: var(--color-base-brown-dark);
+}
+
+/* テーブルボディ　使用曲 */
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td
+  .description {
+  display: flex;
   justify-content: center;
-  position: relative;
-  border-bottom: none;
-}
-#contents-main
-  .snews-17th_event-box.mobility-fes
-  .content_box
-  .eventinfo.img-only::before {
-  position: absolute;
-  content: "";
-  top: -40px;
-  right: 0;
-  width: 78px;
-  height: 78px;
-  background-image: url(bnr_automallfes_free.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-}
-
-.sp
-  #contents-main
-  .snews-17th_event-box.mobility-fes
-  .content_box
-  .eventinfo.img-only::before {
-  width: 15%;
-  height: 15%;
-  background-size: contain;
-  top: -48px;
-}
-
-#contents-main
-  .snews-17th_event-box.mobility-fes
-  .content_box
-  .eventinfo.img-only
-  .img_box {
-  width: 60%;
-}
-.sp
-  #contents-main
-  .snews-17th_event-box.mobility-fes
-  .content_box
-  .eventinfo.img-only
-  .img_box {
+  align-items: flex-start;
+  gap: 3px;
   width: 100%;
+  font-size: 11px;
+  text-align: left;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td
+  .description
+  span {
+  background-color: var(--color-base-light-gray);
+  color: var(--color-base-white);
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 10px;
+  line-height: 1.2;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td
+  .description
+  p {
+  flex: 1;
+  line-height: normal;
 }
 
-#contents-main .snews-17th_event-box.mobility-fes .content_box h5 {
-  margin: 0px 0px 20px;
-}
-
-#contents-main .snews-17th_event-box .event_white_box {
-  border-bottom: 2px solid #18b7cd;
-  padding-bottom: 30px;
-  margin: 0;
-  border-radius: 0;
-  position: relative;
-}
-#contents-main .snews-17th_event-box .event_white_box::after {
-  display: none;
-}
-.sp #contents-main .snews-17th_event-box .event_white_box {
-  margin: 0 10px 20px 10px;
-}
-#contents-main .snews-17th_event-box .event_white_box::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 0;
-  height: 0;
-  z-index: 1;
-  border-width: 15px;
-  border-color: transparent #18b7cd #18b7cd transparent;
-  border-style: solid;
-}
-
-#contents-main .snews-17th_event-box .event_white_box .event_white_box_inner {
-  background-color: #fff;
-  /* padding: 20px; */
-  margin-top: 20px;
-  border-radius: 10px;
-  position: relative;
-}
-#contents-main
-  .snews-17th_event-box
-  .event_white_box
-  .event_white_box_inner
-  .event {
-  padding: 30px 20px 0;
-}
-.sp
+/* テーブルボディ　映画画像 */
+#contents.goldenweek
   #contents-main
-  .snews-17th_event-box
-  .event_white_box
-  .event_white_box_inner
-  .event {
-  padding: 10px;
-}
-#contents-main
-  .snews-17th_event-box
-  .event_white_box
-  .event_white_box_inner
-  .content_box:last-of-type {
-  padding-bottom: 30px;
-}
-.sp
-  #contents-main
-  .snews-17th_event-box
-  .event_white_box
-  .event_white_box_inner
-  .content_box:last-of-type {
-  padding-bottom: 0;
-}
-.sp
-  #contents-main
-  .snews-17th_event-box
-  .event_white_box
-  .event_white_box_inner {
-  padding: 0;
-  margin-top: 0;
-}
-#contents-main
-  .snews-17th_event-box
-  .event_white_box
-  #contents-main
-  .snews-17th_event-box
-  .event_white_box
-  .eventinfo {
-  border-bottom: none;
-}
-/* #contents-main .snews-17th_event-box .event_white_box .content_box .eventinfo::after {
-  display: none;
-} */
-
-/* ALPEN NEW OPEN */
-#contents-main
-  .snews-17th_event-box.item07
-  .snews-17th_event-box_content
-  .img
+  .musictheater
+  .musictheater-table
+  tbody
+  td
   img {
   width: 100%;
 }
 
-/* 17周年メニュー & 春のおすすめメニュー */
-.snews-17th_gourmet-box {
-  position: relative;
-  margin-top: 50px;
-  background-image: url(bg_spring_gourmet_left.png),
-    url(bg_spring_gourmet_right.png), url(bg_17th_gourmet.png);
-  background-position: top left, top right, center;
-  background-repeat: repeat-y, repeat-y, repeat-y;
-  background-size: auto, auto, 97% 50%;
-  width: 95%;
-  margin: 0 auto;
-  margin-top: 110px;
-  padding: 20px 0;
+/* ラ・フォル・ジュルネ */
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table.la-folle-table {
+  margin-top: 100px;
 }
-
-.snews-17th_gourmet-box::before,
-.snews-17th_gourmet-box::after {
-  position: absolute;
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th.la-folle-day {
+  position: relative;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th.la-folle-day::before {
   content: "";
+  position: absolute;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th.la-folle-day.la-folle-day-icon-left::before {
+  border-top: 1px solid #a9a5a3;
+  border-left: 1px solid #a9a5a3;
+  top: -35px;
+  left: 0;
+  width: 15px;
+  height: 25px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th.la-folle-day.la-folle-day-icon-right::before {
+  border-top: 1px solid #a9a5a3;
+  border-right: 1px solid #a9a5a3;
+  top: -35px;
+  right: 0;
+  width: 15px;
+  height: 25px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  thead
+  th.la-folle-day.la-folle-day-title::before {
+  background-image: url(./fig_lafollejournee2025.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 100%;
-  height: 20px;
-}
-.snews-17th_gourmet-box::before {
-  background-image: url(bg_spring_gourmet_top.png);
-  background-position: top center;
-  top: -10px;
-}
-.snews-17th_gourmet-box::after {
-  background-image: url(bg_spring_gourmet_bottom.png);
-  background-position: bottom center;
-  bottom: -10px;
-}
-
-.snews-17th_gourmet-box .bg_17th_gourmet {
-  /* background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat, repeat-y; */
-  padding-top: 50px;
-
-  margin-bottom: 20px;
-}
-
-.sp .snews-17th_gourmet-box .bg_17th_gourmet {
-  margin-bottom: 0;
-}
-
-#snews-17th .snews-17th_gourmet-box .contents-ttl {
-  background-image: none;
-  position: absolute;
-  top: -80px;
-  left: 50%;
+  background-position: center;
+  max-width: 580px;
+  height: 40px;
+  top: -55px;
+  left: 55%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  width: 95%;
+  width: 280%;
 }
 
-.sp #snews-17th .snews-17th_gourmet-box .contents-ttl {
-  width: 80%;
-  top: -3%;
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td.la-folle-td {
+  background-color: #f8cfbb;
 }
 
-#snews-17th .snews-17th_gourmet-box .contents-ttl img {
-  width: 100%;
-  height: auto;
-}
-
-#contents-main .snews-17th_gourmet-box .item-list {
-  padding: 50px 40px 20px;
-}
-
-.sp #contents-main .snews-17th_gourmet-box .item-list {
-  padding: 0px 40px 0px;
-}
-
-#contents-main .snews-17th_gourmet-box .item-list .img_box img {
-  /* width: 250px; */
-}
-.sp #contents-main .snews-17th_gourmet-box .item-list .img_box img {
-  width: 90%;
-}
-
-/* #contents-main .snews-17th_gourmet-box .shop_item .item-list li a {
-  align-items: flex-start;
-} */
-.sp #contents-main .snews-17th_gourmet-box .shop_item .item-list li a {
-  flex-direction: column;
-}
-
-#contents-main
-  .snews-17th_gourmet-box
-  .shop_item
-  .item-list
-  li
-  .item-desc
-  .blue {
-  color: #18b7cd;
-  font-weight: bold;
-}
-
-/* ----------------------
-Happy Spring
------------------------ */
-
-.sp #happyspring {
-  padding: 10px 20px 0 20px;
-  box-sizing: border-box;
-}
-
-.sp #happyspring > .bg_selection {
-  padding: 0 10px;
-}
-
-#happyspring .contents-ttl {
-  text-align: center;
-}
-#happyspring .contents-ttl img {
-  width: 300px;
-}
-#happyspring .contents-ttl img {
-  width: 75%;
-}
-
-#happyspring {
-  background: #f8f7f7;
-  background-image: url(bg_happy_spring.png);
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding: 10px 0;
-}
-
-#happyspring .shop_item .item-list li {
-  background-position: center;
-  background-size: 80%;
-  background-repeat: no-repeat;
-}
-#happyspring .shop_item .item-list li.item-pink {
-  background-image: url(bg_happyspring_item_pink.png);
-}
-#happyspring .shop_item .item-list li.item-yellow {
-  background-image: url(bg_happyspring_item_yellow.png);
-}
-#happyspring .shop_item .item-list li.item-purple {
-  background-image: url(bg_happyspring_item_purple.png);
-}
-#happyspring .shop_item .item-list li.item-orange {
-  background-image: url(bg_happyspring_item_orange.png);
-}
-
-#happyspring .shop_item .item-list li.add_text {
+/* アイコン */
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td.nodata {
   position: relative;
 }
-#happyspring .shop_item .item-list li.add_text::before {
-  position: absolute;
-  top: 0;
-  left: 50px;
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td.nodata::before {
   content: "";
-  background-size: 200px;
+  position: absolute;
   background-repeat: no-repeat;
-  width: 350px;
-  height: 80px;
-}
-.sp #happyspring .shop_item .item-list li.add_text::before {
-  left: 0;
-}
-#happyspring .shop_item .item-list li.item-pink.add_text::before {
-  background-image: url(bnr_happy_spring_text1.png);
-}
-#happyspring .shop_item .item-list li.item-yellow.add_text::before {
-  background-image: url(bnr_happy_spring_text2.png);
-  background-size: 220px;
-  width: 220px;
-}
-#happyspring .shop_item .item-list li.item-purple.add_text::before {
-  background-image: url(bnr_happy_spring_text3.png);
-  background-size: 220px;
-  width: 220px;
-}
-#happyspring .shop_item .item-list li.item-orange.add_text::before {
-  background-image: url(bnr_happy_spring_text4.png);
-}
-
-#happyspring .shop_item .item-list li a {
-  align-items: center;
-  min-height: 350px;
-}
-
-.sp #happyspring .shop_item .item-list li a {
-  flex-direction: column;
-  min-height: auto;
-}
-
-#happyspring .shop_item .item-list li.add_text a {
-  margin-top: 60px;
-}
-
-.sp #happyspring .shop_item .item-list li {
+  background-position: center;
   background-size: 100%;
-  background-position: top 10% center;
+}
+
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td.nodata.icon1::before {
+  background-image: url(./icon_musictheater-table1-1.png);
+  width: 39px;
+  height: 61px;
+  top: 30px;
+  right: 20px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td.nodata.icon2::before {
+  background-image: url(./icon_musictheater-table1-2.png);
+  width: 36px;
+  height: 33px;
+  top: 100px;
+  left: 20px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td.nodata.icon3::before {
+  background-image: url(./icon_musictheater-table2-1.png);
+  width: 189px;
+  height: 143px;
+  top: 30px;
+  left: 80px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table
+  tbody
+  td.nodata.icon4::before {
+  background-image: url(./icon_musictheater-table2-2.png);
+  width: 123px;
+  height: 139px;
+  top: 60px;
+  left: 70px;
+}
+
+/* 音楽プログラム　ニュークラシックステージ　ラ・フォル・ジュルネ
+============================================ */
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program {
+  margin-top: 50px;
+}
+/* #contents.goldenweek #contents-main .musictheater .musictheater-section-program ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li {
+  width: calc((100% - 50px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+}
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li img {
+  width: 200px;
+}
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li .program-info {
+  flex: 1;
+  font-weight: bold;
+  font-size: 20px;
+}
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li .program-info .date {
+  border-bottom: 1px solid #a9a5a3;
+  padding-bottom: 10px;
+}
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li .program-info .program-info_description {
+  padding-top: 10px;
+}
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li .program-info .program-info_description .title {
+  font-size: 24px;
+}
+#contents.goldenweek #contents-main .musictheater .musictheater-section-program ul li .program-info .program-info_description .text {
+  margin-top: 10px;
+} */
+
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li {
+  width: calc((100% - 50px) / 2);
+  display: grid;
+  grid-auto-columns: 160px 1fr;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li
+  img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li
+  .date {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  border-bottom: 1px solid #a9a5a3;
+  padding-bottom: 10px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li
+  .title {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 20px;
+  padding-top: 10px;
+}
+#contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li
+  .text {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  padding-top: 10px;
+  text-align: justify;
+}
+
+/* 注意事項
+============================================ */
+#contents.goldenweek #contents-main .attention {
+  max-width: 1110px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 50px;
+  border: 1px solid #231815;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+/* ===========================================
+***
+*** KITTE GW 2025　SP表示
+***
+============================================ */
+
+/* 全体
+============================================ */
+
+.sp #contents.goldenweek #contents-main .inner {
   padding-bottom: 20px;
 }
 
-/* #happyspring .shop_item .item-list li .img_box {
-  text-align: center;
-} */
-#happyspring .shop_item .item-list li .img_box img {
-  width: 300px;
-}
-.sp #happyspring .shop_item .item-list li .img_box img {
-  width: 60%;
-}
-
-#happyspring .shop_item .item-desc {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-#happyspring .shop_item .item-desc .pink {
-  color: #e85382;
-  font-weight: bold;
-}
-#happyspring .shop_item .item-desc .bold {
-  font-weight: bold;
-}
-#happyspring .shop_item .item-desc .normal {
-  font-weight: normal;
-}
-
-/* ----------------------
-フレッシュな春を応援！〜春におすすめのサービス＆キャンペーン〜
------------------------ */
-
-/* #freshspring {
-    background-image:url(bg_happyspring_top.png), url(bg_happyspring_middle.png),url(bg_happyspring_bottom.png);
-    background-position: top,top,bottom;
-    background-size: contain;
-    background-repeat:no-repeat, repeat-y;
-
-    position: relative;
-} */
-
-#freshspring {
-  position: relative;
-  padding-bottom: 40px;
-  padding-top: 60px;
-}
-
-#freshspring::before,
-#freshspring::after {
+.sp #contents.goldenweek #contents-main.all::before {
+  background-size: 115% auto;
   position: absolute;
-  content: "";
-  background-size: 100%;
-  background-repeat: no-repeat;
   width: 100%;
-  height: 40px;
-}
-.sp #freshspring::before,
-.sp #freshspring::after {
-  height: 20px;
-}
-#freshspring::before {
-  background-image: url(bg_happyspring_top.png);
-  background-position: top;
-  margin-top: -27px;
-}
-.sp #freshspring::before {
-  margin-top: -3%;
-}
-#freshspring::after {
-  background-image: url(bg_happyspring_bottom.png);
-  background-position: bottom;
-  margin-top: -16px;
-}
-.sp #freshspring::after {
-  margin-top: -5%;
-  padding-bottom: 10px;
+  min-width: auto;
+  height: 180px;
+  top: 0;
 }
 
-.sp #freshspring {
-  width: 100%;
-  padding-bottom: 30px;
-}
-
-#contents-main #freshspring .bg_selection {
-  padding: 0 30px;
-  background-image: url(bg_happyspring_middle.png);
-  background-position: top;
-  background-size: contain;
-  background-repeat: repeat-y;
-}
-
-.sp #contents-main #freshspring .bg_selection {
-  padding: 0 20px 0 20px;
-}
-
-#contents-main #freshspring .box_inner h3 {
-  font-weight: bold;
-  font-size: 20px;
-  color: #9dc814;
-  border-bottom: 1px solid #9dc814;
-  position: relative;
+/* メインタイトル
+============================================ */
+.sp #contents.goldenweek #contents-main .main-title h2 {
   margin: 0;
-  text-align: center;
-  padding: 10px 0;
 }
-.sp #contents-main #freshspring h3 {
-  font-size: 20px;
-  padding: 14px;
+.sp #contents.goldenweek #contents-main .main-title img {
+  width: 70%;
 }
 
-#freshspring h3 span {
-  display: block;
+/* キャンペーン情報
+「MUSIC THEATER デジタル抽選会」「LINE公式アカウントキャンペーン」
+============================================ */
+.sp #contents.goldenweek #contents-main .campaign {
+  padding: 20px;
+  gap: 15px;
+}
+
+/* キャンペーン期間、開催場所 */
+.sp #contents.goldenweek #contents-main .campaign .campaign_term {
+  width: 100%;
+}
+.sp #contents.goldenweek #contents-main .campaign .campaign_term dl {
+  padding: 5px 10px;
+  gap: 10px;
+  font-size: 16px;
+}
+.sp #contents.goldenweek #contents-main .campaign .campaign_term dl .detabox {
+  flex-direction: column;
+}
+
+/* 備考 */
+.sp #contents.goldenweek #contents-main .campaign .campaign_remark {
+  font-size: 10px;
+  line-height: normal;
+}
+
+/* MUSIC THEATER デジタル抽選会
+============================*/
+
+/* 背景画像 */
+.sp #contents.goldenweek #contents-main .bg-digital-lottery {
+  background-image: none;
+}
+
+.sp #contents.goldenweek #contents-main .campaign h3 .subtext {
+  font-size: 20px;
+  padding: 10px 50px 10px 50px;
+  background-size: 40px;
+}
+.sp #contents.goldenweek #contents-main .campaign h3 .subtext::before {
+  width: 70%;
+  bottom: 2px;
+}
+.sp #contents.goldenweek #contents-main .campaign h3 .maintext {
+  font-size: 30px;
+}
+
+/* キャンペーン期間、開催場所 */
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_term
+  dl {
+  padding: 5px 10px;
+  gap: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_term
+  dl
+  .detabox {
+  flex-direction: column;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_participate {
+  font-size: 16px;
+}
+
+/* キャンペーン概要テキスト */
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_text {
+  font-size: 16px;
+}
+
+/* 参加方法 */
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply {
+  padding: 0px 0px 10px 30px;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  h4 {
   font-size: 18px;
 }
 
-#freshspring .shop_item .item-list {
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding-top: 30px;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply::before,
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply::after {
+  display: none;
 }
 
-.sp #freshspring .shop_item .item-list {
-  padding-top: 20px;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol {
+  flex-direction: column;
   gap: 20px;
 }
 
-#happyspring #freshspring .shop_item .item-desc {
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li {
+  flex-direction: row;
+  text-align: left;
+  position: relative;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li::before {
+  content: "";
+  position: absolute;
+  bottom: -47%;
+  left: 50%;
+  transform: rotate(90deg) translateX(-50%);
+  -webkit-transform: rotate(90deg) translateX(-50%);
+  -ms-transform: rotate(90deg) translateX(-50%);
+  background-image: url(./icon_digital-lottery_apply.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 18px;
+  height: 31px;
+}
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li:last-of-type:before {
+  display: none;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li
+  .image {
+  width: 30%;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li
+  .image::before {
+  display: none;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li
+  .image
+  .num {
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.digital-lottery
+  .digital-lottery_apply
+  ol
+  li
+  .text {
+  flex: 1;
+}
+
+/* LINE公式アカウントキャンペーン
+============================*/
+
+/* 背景画像 */
+.sp #contents.goldenweek #contents-main .bg-line-campaign {
+  background-image: none;
+}
+
+/* 全体 */
+.sp #contents.goldenweek #contents-main .line-campaign::before,
+.sp #contents.goldenweek #contents-main .line-campaign::after {
+  display: none;
+}
+
+.sp #contents.goldenweek #contents-main .line-campaign.campaign h3 .subtext {
+  padding: 0 50px 0 50px;
+}
+.sp #contents.goldenweek #contents-main .campaign.line-campaign h3 {
   gap: 0;
 }
 
-.sp #freshspring .shop_item .item-list li .img_box {
-  width: 100%;
-}
-
-#freshspring .shop_item .item-list li {
-  border-bottom: 1px solid #9dc814;
-  padding-bottom: 30px;
-}
-#freshspring .shop_item .item-list li:last-of-type {
-  border-bottom: none;
-}
-.sp #freshspring .shop_item .item-list li:last-of-type {
-  padding: 0;
-  padding-bottom: 20px;
-}
-
-#freshspring .shop_item .item-list li .img_box,
-#freshspring .shop_item .item-list li .text_box {
-  width: 75%;
-  font-size: 16px;
-}
-
-#freshspring .shop_item .item-list li .img_box img {
-  width: 70%;
-}
-
-.sp #freshspring .shop_item .item-list li .img_box,
-.sp #freshspring .shop_item .item-list li .text_box {
-  width: 100%;
-}
-
-#freshspring .shop_item .item-list li .title {
-  font-size: 24px;
-}
-.sp #freshspring .shop_item .item-list li .title {
-  font-size: 18px;
-}
-#freshspring .shop_item .item-list li .green {
-  color: #9dc814;
-  font-weight: bold;
-}
-#freshspring .shop_item .item-list li .normal {
-  font-weight: normal;
-}
-
-#freshspring .shop_item .item-list li .item_text {
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  margin-top: 10px;
-}
-
-#freshspring .shop_item .item-list li a {
-  flex-direction: column;
-}
-
-/* ----------------------
-EVENT
------------------------ */
-#contents-main #eve_info h3 {
-  text-align: left;
-  color: #e95377;
-  font-size: 24px;
-}
-
-.sp #contents-main #eve_info h3 {
-  font-size: 18px;
-  margin: 10px auto 10px;
-}
-
-#contents-main #eve_info .content_box .eventinfo {
-  border-bottom: 2px solid #e95377;
-}
-#contents-main #eve_info .content_box:last-of-type .eventinfo {
-  border-bottom: none;
-  padding: 0;
-}
-/* #contents-main #eve_info .content_box:last-of-type .eventinfo::after {
-  display: none;
-} */
-
-.sp #contents-main #eve_info .content_box .eventinfo {
-  flex-direction: column-reverse;
-}
-
-#contents-main #eve_info .content_box .eventinfo .summry_box {
-  width: calc(60% - 10px);
-}
-#contents-main #eve_info .content_box .eventinfo .img_box {
-  width: calc(40% - 10px);
-}
-
-.sp #contents-main #eve_info .content_box .eventinfo .summry_box {
-  width: 100%;
-}
-.sp #contents-main #eve_info .content_box .eventinfo .img_box {
-  width: 100%;
-}
-
-/* ----------------------
-INFORMATION
------------------------ */
-
-#contents-main #infomation h3 {
-  text-align: left;
-  color: rgb(235, 94, 0);
-  font-size: 24px;
-  border-bottom: none;
-}
-
-.sp #contents-main #infomation h3 {
-  font-size: 18px;
-  margin: 10px auto 10px;
-}
-
-.sp #contents-main #infomation {
-  width: 94%;
-  margin-top: 20px;
-}
-
-#contents-main #infomation .reopen {
-  border: 3px solid #eb5e00;
-  padding: 30px 20px;
-}
-.sp #contents-main #infomation .reopen {
-  padding: 20px;
-}
-
-#contents-main #infomation .reopen .reopen_ev {
-  margin-top: 20px;
-}
-#contents-main #infomation .reopen .reopen_ev:first-of-type {
-  margin-top: 0;
-}
-
-#infomation .reopen .ttl_box {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: center;
-  gap: 20px;
-  align-items: center;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eb5e00;
-}
-
-.sp #infomation .reopen .ttl_box {
-  flex-direction: column;
-  align-items: stretch;
-  gap: 10px;
-  padding-bottom: 10px;
-}
-
-#infomation .reopen .ttl_box .left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-#infomation .reopen .ttl_box .right {
-  width: 100%;
-}
-
-#infomation .reopen .ttl_box .text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 24px;
-}
-.sp #infomation .reopen .ttl_box .text {
-  font-size: 18px;
-}
-
-#infomation .reopen .ttl_box .text .orange {
-  color: rgb(235, 94, 0);
-  font-weight: bold;
-}
-#infomation .reopen .ttl_box .text .image {
-  width: 120px;
-}
-
-#infomation .reopen h5 {
-  background-color: rgb(235, 94, 0);
-  outline-offset: -6px;
-  font-family: æ¸¸æ˜Žæœ, "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
-  color: rgb(255, 255, 255);
-  font-size: 24px;
-  box-sizing: border-box;
-  padding: 10px 30px;
-  outline: rgb(255, 255, 255) solid 1px;
-  line-height: 130%;
-  text-align: center;
-  /*margin: 0px 180px 18px;*/
-}
-.sp #infomation .reopen .shin_ev h5 {
-  font-size: 6vw;
-  margin: 36px 36px 26px;
-  padding: 7px 19px;
-  letter-spacing: 2px;
-  line-height: 120%;
-}
-
-#infomation .reopen h5 span {
-  font-size: 18px;
-  color: #fff;
-}
-.sp #infomation .reopen h5 span {
-  font-size: 2vw;
-}
-
-#infomation .reopen .reopen_flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  /* gap: 30px; */
-  border-bottom: 2px solid rgb(235, 94, 0);
-  padding: 0 0 30px;
-  margin-top: 20px;
-  position: relative;
-}
-#infomation .reopen .reopen_flexbox::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 0;
-  height: 0;
-  z-index: 1;
-  border-width: 15px;
-  border-color: transparent rgb(235, 94, 0) rgb(235, 94, 0) transparent;
-  border-style: solid;
-}
-
-#infomation .reopen .reopen_ev:last-of-type .reopen_flexbox {
-  border-bottom: none;
-}
-/* #infomation .reopen .reopen_ev:last-of-type .reopen_flexbox::after {
-  display: none;
-} */
-
-.sp #infomation .reopen .reopen_flexbox {
-  flex-direction: column-reverse;
-  padding-bottom: 20px;
-}
-
-#infomation .reopen .reopen_ev .ttl {
-  color: rgb(235, 94, 0);
-  font-size: 24px;
-  margin-bottom: 0px;
-  font-weight: bold;
-  line-height: 130%;
-}
-
-#infomation .reopen .reopen_ev .img_box {
-  width: calc(40% - 10px);
-}
-#infomation .reopen .reopen_ev .summry_box {
-  width: calc(60% - 10px);
-}
-.sp #infomation .reopen .reopen_ev .img_box {
-  /* float: right; */
-  width: 100%;
-  text-align: center;
-}
-.sp #infomation .reopen .reopen_ev .summry_box {
-  width: 100%;
-}
-
-#infomation .reopen .reopen_ev .reopen_text {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 3px dotted #eb5e00;
-  font-size: 14px;
-  letter-spacing: 2px;
-  line-height: 130%;
-  text-align: left;
-  padding-bottom: 0;
-}
-#infomation .reopen .reopen_ev .shop {
-  text-align: left;
-  /* margin-top: 20px; */
-  font-size: 24px;
-  line-height: 150%;
-}
-.sp #infomation .reopen .reopen_ev .shop {
-  position: relative;
-  font-size: 3vw;
-}
-/* .sp #infomation .reopen .reopen_ev .shop::after{
-  position: absolute;
-  content: "";
-  border-top: 3px dotted #eb5e00;
-  width: 39vw;
-  height: 11vw;
-  bottom: -15vw;
-  left: 0;
-} */
-#infomation .reopen .reopen_ev .shop p:first-child {
-  color: rgb(235, 94, 0);
-  font-weight: bold;
-}
-.sp #infomation .reopen h5 {
-  font-size: 3vw;
-  padding: 12px 14px;
-  letter-spacing: 2px;
-  line-height: 120%;
-  width: 100%;
-}
-.sp #infomation .reopen .reopen_ev .ttl {
-  font-size: 3vw;
-}
-.sp #infomation .reopen .reopen_ev .reopen_text {
-  /* margin-top: 12px; */
-  font-size: 3vw;
-  /* border-top:none; */
-}
-
-/* ----------------------
-バナーINFO
------------------------ */
-#banner-info .box_inner,
-#banner-info2 .box_inner {
-  margin-top: 30px;
-}
-.sp #contents-main #banner-info,
-.sp #contents-main #banner-info2 {
-  width: 94%;
-  margin-top: 20px;
-  margin: 0 auto;
-}
-.sp #banner-info .box_inner,
-.sp #banner-info2 .box_inner {
-  margin-top: 20px;
-}
-
-#banner-info img,
-#banner-info2 img {
-  width: 100%;
-}
-
-/* ----------------------
-CAUTION
------------------------ */
-#contents-main .caution {
-  margin-top: 30px;
-}
-.sp #contents-main .caution {
-  margin-top: 20px;
-}
-
-/* ------------------------------------------------------------------
-20250301公開分記述ここまで
---------------------------------------------------------------------- */
-
-/* ----------------
-  スマホ表示
-  ------------------ */
-.sp #contents-main .content_box .img_box {
-  width: 100%;
-}
-.sp #contents-main .content_box .summry_box {
-  width: 100%;
-}
-.sp #contents-main .content_box .event {
-  padding: 0 20px 20px;
-  margin: 0;
-}
-.sp #contents-main .content_box:first-of-type .event {
-  padding: 10px;
-}
-.sp #contents-main .bg_selection {
-  padding: 0;
-}
-.sp #contents-main .content_box h5 span {
-  font-size: 3vw;
-}
-.sp #contents-main .content_box h5 {
-  font-size: 5vw;
-  margin: 0px 32px 10px;
-  padding: 7px 19px;
-  letter-spacing: 2px;
-  line-height: 120%;
-}
-.sp #contents-main .content_box p.text {
-  font-size: 3.5vw;
-  border-bottom: none;
-  padding: 16px 0;
-}
-.sp #contents-main .content_box .eventinfo {
-  align-items: center;
-  padding-bottom: 10px;
-  flex-direction: column-reverse;
-}
-.sp #contents-main .content_box .event-info {
-  gap: 6px 20px;
-  margin: 20px 0px 12px;
-  justify-content: flex-start;
-  width: 100%;
-}
-.sp #contents-main .content_box dd {
-  width: calc(100% - 130px);
-  font-size: 3.8vw;
-}
-.sp .shop_item .item-list .item_text {
-  width: 100%;
-}
-.sp .shop_item .item-list li .item_logo {
-  width: 20vw;
-  /* min-height: 33px; */
-}
-.sp .bg_selection .cam {
-  padding: 0;
-}
-/* .sp #contents-main .box_inner h3 {
-    font-size: 90%;
-    width: 94%;
-    padding: 0px 0 5px;
-    margin: 30px auto 20px;
-  } */
-.sp .shop_item .item-list li .img_box {
-  width: 100%;
-}
-.sp .shop_item .item-list li .text_box {
-  width: 100%;
-}
-
-/*新生活*/
-.sp #contents-main #halo h4 {
-  width: 70%;
-}
-.sp #contents-main #halo .shop_item {
-  padding: 0px 30px 50px;
-}
-
-.sp #contents-main #halo .shop_item .item-list .item_text::after {
-  position: relative;
-  left: inherit;
-  bottom: inherit;
-  top: -20px;
-}
+/* テキスト */
 .sp
+  #contents.goldenweek
   #contents-main
-  #halo
-  .living
-  .shop_item
-  li:nth-child(-n + 3)
-  .item_text::after,
-.sp #contents-main #halo .kitchen .shop_item li:nth-child(1) .item_text::after {
-  bottom: auto;
-}
-.sp #contents-main #halo .kitchen .shop_item li:nth-child(1) .item_text::after {
-  top: 0;
-}
-@media screen and (max-width: 400px) {
-  .sp #contents-main #halo .shop_item .item-list .item_text::after {
-    top: -15px;
-  }
-  .sp
-    #contents-main
-    #halo
-    .bedroom
-    .shop_item
-    li:nth-child(2)
-    .item_text::after {
-    top: 0;
-  }
-}
-
-/*Living部分特別処理*/
-
-.sp #contents-main #halo .living .shop_item li,
-.sp #contents-main #halo .living .shop_item li:nth-of-type(4),
-.sp #contents-main #halo .living .shop_item li:nth-of-type(5) {
-  width: 100%;
-}
-.sp
-  #contents-main
-  #halo
-  .living
-  .shop_item
-  li:nth-child(-n + 3)
-  .item_text
-  .price {
-  width: calc(100% - 35%);
-}
-
-/* トレッサアプリ */
-.sp #contents-main #toreApp .app_content .card_info h4 p {
-  width: 100%;
-  font-size: 4.5vw;
-}
-.sp #contents-main #toreApp .app_content .card_info {
-  padding: 112px 20px 20px;
-  margin: 20px 20px 0;
-}
-.sp #contents-main #toreApp .app_content .card_info .limit strong {
-  font-size: 7vw;
-  line-height: 1.8;
-}
-.sp #contents-main #toreApp .app_content .card_info .limit {
-  font-size: 4vw;
-  line-height: 1.2;
-}
-.sp #contents-main #box_08 .app_content h4.p_20 {
-  padding: 20px 20px 10px;
-}
-.sp #contents-main #toreApp .app_content .card_info h4 {
-  justify-content: center;
-  right: 0px;
-  top: -15px;
-  padding: 0 0 0 8px;
-  left: 0;
-  box-sizing: border-box;
-  line-height: 1.3;
-}
-.sp #contents-main #toreApp .app_content .position img {
-  width: 100%;
-}
-.sp #contents-main #toreApp {
-  width: 94%;
-  margin: 0 auto 30px;
-}
-.sp #contents-main #toreApp .app_content {
-  padding: 0 0px 20px;
-  /* background: url(bg_app.png); */
-  background-size: cover;
-}
-.sp #contents-main #toreApp .app_content .p_20 {
-  padding: 0 20px 0 15px;
-  box-sizing: border-box;
-}
-.sp #contents-main #toreApp .app_content h4.p_20 {
-  padding: 20px 20px 10px;
-}
-.sp #contents-main #toreApp .app_content p {
-  padding: 0px 20px 20px;
-  margin: 0;
-}
-.sp #contents-main #toreApp .app_content p.tore_att {
-  padding: 10px 20px 0;
+  .campaign.line-campaign
+  .line-campaign_text {
+  padding: 0;
   font-size: 12px;
-  line-height: 18px;
 }
-.sp #contents-main #toreApp .app_content .card_info p.txt {
-  padding: 20px;
-  line-height: 1.2;
-  text-align: justify;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_text
+  .red {
+  font-size: 13px;
 }
-.sp #contents-main #toreApp .app_content .card_info p.money {
-  padding: 12px;
-  margin: 0;
-  font-size: 4.5vw;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_text::before,
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_text::after {
+  display: none;
+}
+
+/* クーポン利用期限 */
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_expire {
   width: 100%;
-  border-radius: 15px;
-  text-align: justify;
+  max-width: none;
+  position: relative;
+  padding: 10px 38px;
 }
-.sp #contents-main #toreApp .app_content .card_info p.money::after {
-  position: inherit;
-  top: inherit;
-  right: inherit;
-  display: inline-block;
-  border-top-width: 6px;
-  border-bottom-width: 6px;
-  border-left-width: 8px;
-  margin-left: 5px;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_expire::before,
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_expire::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100px;
+  height: 115px;
 }
-.sp #contents-main #toreApp .app_content p:last-child {
-  padding: 0px 20px 20px;
-  margin: 0;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_expire::before {
+  left: -40px;
+  background-image: url(./fig_linecampaign_left_sp.png);
+  /* transform: rotate(20deg); */
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  width: 80px;
+  height: 140px;
 }
-.sp #contents-main #toreApp .app_content .limit p {
-  padding: 15px 10px 0;
-  margin: 0;
-  font-size: 3.5vw;
-  text-align: justify;
-  line-height: 1.4;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_expire::after {
+  right: -40px;
+  background-image: url(./fig_linecampaign_right_sp.png);
+  /* transform: rotate(-20deg); */
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  width: 80px;
+  height: 140px;
 }
-.sp #contents-main #toreApp .app_content .card_info h5 {
-  padding: 15px 0 0;
-  line-height: 1.2;
-  font-size: 5vw;
-}
-.sp #contents-main #toreApp h3.tti_app {
-  font-size: 24px;
-  width: 100%;
-}
-.sp #contents-main #toreApp .app_content .flex {
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-  padding: 25px 0 0;
-}
-.sp #contents-main #toreApp .app_content .flex p {
-  padding: 0;
-  width: calc(100% / 2 - 20px);
-}
-.sp #contents-main .content_box .img_box.tokuten img {
-  width: 94%;
-}
-.sp #contents-main .content_box .link-btn p {
-  background: #fff;
-  padding: 10px 0;
-  width: 75%;
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_expire
+  dl {
   font-size: 16px;
-  margin: 0 auto;
-}
-/* クーポン */
-.sp #contents-main .coupon {
-  padding: 0 20px 0 15px;
-}
-.sp #contents-main #toreApp .app_content .dl_text {
-  font-size: 24px;
-  margin: 16px 20px;
-  padding: 12px 10px;
-}
-.sp #contents-main #toreApp .app_content .dl_text::after {
-  bottom: 12px;
-  right: 23px;
-  border-width: 12px;
-}
-/* Life */
-.sp #contents-main #halo {
-  background: url(./bg_newlife.jpg);
-  margin: 0 auto 50px;
-  box-sizing: border-box;
-  width: 94%;
-  padding: 10px 0 0;
-}
-.sp
-  #contents-main
-  #halo
-  .living
-  .shop_item
-  .item-list
-  li:nth-of-type(3)
-  .img_box {
-  width: 100%;
-}
-.sp
-  #contents-main
-  #halo
-  .living
-  .shop_item
-  .item-list
-  li:nth-of-type(3)
-  .text_box {
-  width: 100%;
-}
-.sp #contents-main #halo .shop_item li {
-  width: 100%;
-}
-.sp #contents-main #halo h4 img {
-  width: 60%;
-}
-.sp #contents-main #halo .bg::after {
-  height: 91px;
-}
-.sp #contents-main #halo::before {
-  content: none;
-}
-.sp #contents-main #halo::after {
-  content: none;
-}
-@media screen and (max-width: 375px) {
-  .sp #contents-main #halo .bg::after {
-    height: 87px;
-  }
-}
-@media screen and (max-width: 412px) {
-  .sp #contents-main #halo .bg::after {
-    height: 90px;
-  }
-}
-@media screen and (max-width: 430px) {
-  .sp #contents-main #halo .kitchen.bg::after {
-    height: 93px;
-  }
-}
-/* 新生活 */
-.sp #contents-main #newLife {
-  width: 94%;
-  margin: 0 auto 30px;
-}
-.sp #contents-main #newLife .bg_selection {
-  padding: 0 30px;
-}
-.sp #contents-main #newLife .item-desc strong {
-  width: 90%;
-  margin: 10px auto 10px;
-  font-size: 5vw;
-  display: none;
-}
-.sp #contents-main #newLife .item-list li p span {
-  margin: 0 0 8px;
-}
-.sp #contents-main #newLife .op_day {
-  background: #eb5e00;
-  color: #fff;
-  display: inline-block;
-  text-align: left;
-  padding: 0px 5px;
-  margin-right: auto;
-  font-size: 4vw;
-}
-.sp #contents-main #newLife .bg_selection::after {
-  height: 8%;
-}
-.sp #contents-main #newLife .item-list li:last-of-type {
-  margin: 0 0 50px;
-}
-
-.sp #contents-main #eve_info {
-  width: 94%;
-  margin-top: 20px;
-}
-.sp #contents-main #eve_info #event {
-  width: 94%;
-  padding: 30px 0 0;
-}
-.sp #contents-main .content_box .event .ev_bg {
-  padding: 0px 20px;
-}
-.sp #contents-main .content_box .event .ev_bg .eventinfo {
-  padding-bottom: 10px;
-}
-
-.sp #contents-main .content_box .event-info .atten {
-  text-align: left;
-}
-.sp #contents-main #eve_info .content_box p.ttl {
-  font-size: 5vw;
-}
-.sp #contents-main #eve_info .content_box p.ttl span.small {
-  font-size: 4vw;
-}
-.sp #contents-main #eve_info .content_box p.ttl.sab {
-  font-size: 5vw;
-  margin: -10px 0 15px;
-}
-.sp #contents-main .content_box .event.same {
-  margin: 0;
-}
-.sp #contents-main .content_box .event.same.last {
-  padding: 16px 20px;
-}
-.sp #contents-main .content_box:first-of-type .event .ttl br {
-  display: none;
-}
-.sp #contents-main .content_box:first-of-type .event .img_box {
-  /* margin-bottom: 20px; */
-}
-/* インフォ */
-.sp #contents-main #info {
-  width: 94%;
-  margin: 0 auto 30px;
-}
-.sp #contents-main #info .new_content {
-  font-size: 4.5vw;
-  padding: 20px 20px;
-}
-.sp #contents-main #info .content_box.rest strong {
-  font-size: 10vw;
-}
-.sp #contents-main #info .content_box.rest p {
-  line-height: 40px;
-}
-.sp #contents-main #info h3 {
-  font-size: 7vw;
-}
-.sp #contents-main #eve_info .bg_selection {
   padding: 0;
 }
 
-.sp #contents-main #eve_info .content_box:first-of-type .event {
-  padding: 20px;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_expire
+  .text {
+  font-size: 12px;
+  line-height: normal;
 }
 
-.sp #contents-main #info .new_content p:first-of-type {
-  line-height: 28px;
-}
-/* リニューアルopen */
-.sp #contents-main #event .content_box.reopen .ttl_box {
-  flex-wrap: wrap;
-  gap: 15px;
-}
-.sp #contents-main #event .content_box.reopen .reopen_ev .flex {
-  flex-wrap: wrap;
-}
-.sp #contents-main #event .content_box.reopen .reopen_ev .flex p:last-child {
+/* 公式アカウントボタン */
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_btn {
   width: 100%;
+  font-size: 18px;
 }
-.sp #contents-main #event .content_box.reopen .reopen_ev .flex p:first-child {
-  width: 100%;
-  padding: 8px 0;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_btn
+  a {
+  min-height: auto;
 }
-.sp #contents-main #eve_info .content_box p.ttl.sab_ttl {
-  font-size: 4.5vw;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .campaign.line-campaign
+  .line-campaign_btn
+  a::after {
+  font-size: 20px;
+  right: 15px;
 }
-.sp #contents-main .content_box p.ttl span {
-  font-size: 4vw;
-  line-height: 1.3;
+
+/* 同時開催アイコン */
+.sp #contents.goldenweek #contents-main .line-campaign .dojikaisai {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 80px;
+  height: 80px;
 }
-.sp #contents-main #event .content_box.reopen .event-box {
-  padding: 16px 20px 20px;
+
+/* 音楽と映画を楽しむ11日間
+============================================ */
+
+/* メインタイトル */
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-title h3 {
+  font-size: 24px;
+  letter-spacing: normal;
+  line-height: 1.2;
 }
-.sp #contents-main #event .content_box.reopen .event-box::after {
-  border-width: 15px;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-title
+  h3
+  .musictheater-title_big {
+  font-size: 28px;
 }
-.sp #contents-main #event .content_box.reopen h5 {
-  font-size: 6vw;
-  padding: 12px 14px;
-  letter-spacing: 2px;
-  /* line-height: 120%; */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-title
+  h3::before {
+  width: 44px;
+  height: 68px;
+  top: 0px;
 }
-.sp #contents-main #event .content_box.reopen h5 span {
-  font-size: 4.5vw;
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-title
+  h3::after {
+  width: 24px;
+  height: 39px;
+  bottom: 15px;
 }
-.sp #contents-main #event .content_box.reopen .reopen_ev .ttl {
-  font-size: 5vw;
-  width: 100%;
-  margin: 0 0 20px;
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-title
+  .musictheater-title_text {
+  font-size: 16px;
+}
+
+/* 各セクション */
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-section {
+  margin-top: 50px;
+}
+
+/* 音楽と映画を楽しむ11日間　各タイトル（特別プログラム、ニュークラシックステージ、ラ・フォル・ジュルネ）
+============================================ */
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-title_inner {
+  padding-left: 0;
+}
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-title_inner::before {
+  /* width: 60px;
+  height: 60px;
+  top: 20px;
+  left: -15px; */
+  display: none;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-title
+  h4 {
+  font-size: 20px;
+  padding-left: 55px;
+  position: relative;
+}
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-title
+  h4::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-title_inner
+  p {
   text-align: center;
-}
-.sp #contents-main #event .content_box.reopen .reopen_ev .shop p:first-child {
-  font-size: 5vw;
-  line-height: 28px;
-}
-.sp #infomation .reopen .reopen_ev .shop {
-  position: relative;
-  font-size: 3vw;
-}
-.sp #contents-main #event .content_box.reopen .reopen_flexbox {
-  display: block;
-}
-.sp #contents-main #event .content_box.reopen .reopen_ev .shop {
-  position: relative;
-  font-size: 3vw;
-}
-.sp #contents-main #event .content_box.reopen .reopen_ev .reopen_text {
-  margin-top: 0px;
-  font-size: 4vw;
-  border-top: none;
-  padding-top: 10px;
-}
-.sp #contents-main #event .content_box.reopen .reopen_ev .img_box {
-  /* float: right; */
-  width: 100%;
-}
-.sp #contents-main #event .content_box.reopen .reopen_ev .summry_box {
-  width: 100%;
-}
-.sp #contents-main #event .content_box.info_txt h5 {
-  font-size: 17px;
-  padding: 10px;
-}
-.sp #contents-main #event .content_box.info_txt h6 {
-  font-size: 16px;
-  padding: 10px;
-}
-.sp #contents-main #event .content_box.info_txt p {
-  font-size: 16px;
-  padding: 16px 0 24px;
-}
-.sp #contents-main #event .content_box.reopen h4.open {
-  padding: 0;
-}
-@media screen and (max-width: 320px) {
-  .sp #sw_fare .event-text.top {
-    padding: 15px;
-  }
-  .sp .img_box.h245 img {
-    height: 190px;
-  }
-  .sp .img_box.h145 img {
-    height: 105px;
-  }
+  font-size: 15px;
 }
 
+/* 音楽と映画を楽しむKITTEのGW特別プログラム */
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .special-program
+  .musictheater-section-title
+  h4::before {
+  background-image: url(./icon_musictheater-section-title1.png);
+  width: 60px;
+  height: 60px;
+}
+
+/* ニュークラシックステージ */
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .newclassic-stage
+  .musictheater-section-title
+  h4::before {
+  background-image: url(./icon_musictheater-section-title2.png);
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+/* ラ・フォル・ジュルネ */
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .la-folle
+  .musictheater-section-title
+  h4::before {
+  background-image: url(./icon_musictheater-section-title3.png);
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+/* 音楽と映画を楽しむ11日間　スケジュール表
+============================================ */
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table_scroll {
+  overflow-x: scroll;
+  position: relative;
+}
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table_scroll.withtext::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 86px;
+  background-image: url(./fig_scrolltext.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 230px;
+  height: 22px;
+}
+
+.sp #contents.goldenweek #contents-main .musictheater .musictheater-table {
+  white-space: nowrap;
+  min-width: 1175px;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-table.la-folle-table {
+  min-width: 1400px;
+  margin-top: 100px;
+}
+
+/* テーブルヘッダー　日付 */
+
+/* テーブルボディ　イベント内容 */
+
+/* 音楽プログラム　ニュークラシックステージ　ラ・フォル・ジュルネ
+============================================ */
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul {
+  flex-direction: column;
+  gap: 0;
+}
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li {
+  width: 100%;
+  display: grid;
+  grid-auto-columns: 120px 1fr;
+  column-gap: 10px;
+  align-items: flex-start;
+  font-size: 16px;
+  padding: 20px 0;
+  border-bottom: 1px dashed #333333;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li:first-of-type {
+  padding-top: 0;
+}
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li
+  img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+}
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li
+  .date {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding-bottom: 5px;
+}
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li
+  .title {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.sp
+  #contents.goldenweek
+  #contents-main
+  .musictheater
+  .musictheater-section-program
+  ul
+  li
+  .text {
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+}
+
+/* 注意事項
+============================================ */
+.sp #contents.goldenweek #contents-main .attention {
+  font-size: 14px;
+}
